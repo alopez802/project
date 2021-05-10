@@ -1,0 +1,1 @@
+-wto "dabd374fa1be42fdb4adfb073f273dff" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "TeaEncipherTb_behav" "xil_defaultlib.TeaEncipherTb" -log "elaborate.log" 
