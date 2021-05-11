@@ -24,16 +24,17 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 entity TeaEncipherTb is
+generic (top_num_rounds : integer  := 2);
     --Port()
 end TeaEncipherTb; 
 
 architecture Behavioral of TeaEncipherTb is
 
     component TeaEncipher
+    generic(num_rounds : integer:=32);
         Port (
             clk         : in  STD_LOGIC;
             rst         : in  STD_LOGIC;
-            num_rounds  : in  UNSIGNED(7 downto 0);
             input_data  : in  UNSIGNED(63 downto 0);
             key         : in  UNSIGNED(127 downto 0);
             output_data : out UNSIGNED(63 downto 0);
@@ -44,7 +45,7 @@ architecture Behavioral of TeaEncipherTb is
     constant jump : time := 10 ns;
     signal clk, rst, done : STD_LOGIC;
     
-    signal num_rounds : UNSIGNED(7 downto 0);
+
 
     signal din, dout : UNSIGNED(63 downto 0);
     signal key       : UNSIGNED(127 downto 0);
@@ -60,10 +61,10 @@ begin
     end process;
     
     UUT: TeaEncipher
+    generic map(num_rounds => top_num_rounds)
         port map (
             clk         => clk,
             rst         => rst,
-            num_rounds  => num_rounds,
             input_data  => din,
             key         => key,
             output_data => dout,
@@ -74,7 +75,6 @@ begin
     begin
         din <= x"DEADBEEFFEEBDAED";
         key <= x"FEEDBEEF00C0FFEEF00000110FACADE0";
-        num_rounds <= x"40";
         
         rst <= '1';
         wait for jump;

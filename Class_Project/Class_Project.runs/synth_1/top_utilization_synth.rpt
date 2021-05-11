@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Wed May  5 22:55:52 2021
+| Date         : Mon May 10 18:32:03 2021
 | Host         : LAPTOP-E46NNAVE running 64-bit major release  (build 9200)
 | Command      : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
 | Design       : top
@@ -30,13 +30,13 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             | 7154 |     0 |     63400 | 11.28 |
-|   LUT as Logic          | 7154 |     0 |     63400 | 11.28 |
+| Slice LUTs*             |   87 |     0 |     63400 |  0.14 |
+|   LUT as Logic          |   87 |     0 |     63400 |  0.14 |
 |   LUT as Memory         |    0 |     0 |     19000 |  0.00 |
-| Slice Registers         |  284 |     0 |    126800 |  0.22 |
-|   Register as Flip Flop |  284 |     0 |    126800 |  0.22 |
+| Slice Registers         |   46 |     0 |    126800 |  0.04 |
+|   Register as Flip Flop |   46 |     0 |    126800 |  0.04 |
 |   Register as Latch     |    0 |     0 |    126800 |  0.00 |
-| F7 Muxes                |   27 |     0 |     31700 |  0.09 |
+| F7 Muxes                |    5 |     0 |     31700 |  0.02 |
 | F8 Muxes                |    0 |     0 |     15850 |  0.00 |
 +-------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
@@ -56,8 +56,8 @@ Table of Contents
 | 0     |          Yes |           - |            - |
 | 1     |          Yes |           - |          Set |
 | 25    |          Yes |           - |        Reset |
-| 1     |          Yes |         Set |            - |
-| 257   |          Yes |       Reset |            - |
+| 0     |          Yes |         Set |            - |
+| 20    |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -90,7 +90,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   41 |     0 |       210 | 19.52 |
+| Bonded IOB                  |   39 |     0 |       210 | 18.57 |
 | Bonded IPADs                |    0 |     0 |         2 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         6 |  0.00 |
 | PHASER_REF                  |    0 |     0 |         6 |  0.00 |
@@ -146,21 +146,20 @@ Table of Contents
 +-----------+------+---------------------+
 |  Ref Name | Used | Functional Category |
 +-----------+------+---------------------+
-| LUT2      | 3545 |                 LUT |
-| LUT4      | 2109 |                 LUT |
-| CARRY4    | 2000 |          CarryLogic |
-| LUT1      | 1018 |                 LUT |
-| LUT6      |  436 |                 LUT |
-| FDRE      |  257 |        Flop & Latch |
-| LUT5      |   68 |                 LUT |
-| LUT3      |   34 |                 LUT |
+| LUT6      |   29 |                 LUT |
 | OBUF      |   27 |                  IO |
-| MUXF7     |   27 |               MuxFx |
 | FDCE      |   25 |        Flop & Latch |
-| IBUF      |   14 |                  IO |
+| LUT2      |   20 |                 LUT |
+| FDRE      |   20 |        Flop & Latch |
+| LUT4      |   19 |                 LUT |
+| LUT3      |   18 |                 LUT |
+| CARRY4    |   16 |          CarryLogic |
+| LUT5      |   15 |                 LUT |
+| IBUF      |   12 |                  IO |
+| LUT1      |    9 |                 LUT |
+| MUXF7     |    5 |               MuxFx |
 | BUFG      |    4 |               Clock |
 | PLLE2_ADV |    1 |               Clock |
-| FDSE      |    1 |        Flop & Latch |
 | FDPE      |    1 |        Flop & Latch |
 +-----------+------+---------------------+
 

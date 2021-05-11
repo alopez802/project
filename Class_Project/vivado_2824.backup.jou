@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun May  9 22:45:56 2021
+# Process ID: 2824
+# Current directory: C:/Users/Ahiezer/Documents/ECE 4304/Class_Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5596 C:\Users\Ahiezer\Documents\ECE 4304\Class_Project\Class_Project.xpr
+# Log file: C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/vivado.log
+# Journal file: C:/Users/Ahiezer/Documents/ECE 4304/Class_Project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.xpr}
+update_compile_order -fileset sources_1
+open_run impl_1

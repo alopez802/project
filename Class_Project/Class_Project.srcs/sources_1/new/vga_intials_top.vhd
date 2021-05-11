@@ -96,7 +96,7 @@ component PROM_IMG is
 			HEX_SIZE :positive:= 114
            );
     Port   ( 
-			 sel     : in STD_LOGIC_VECTOR(63 downto 0);
+
 			 addr    : in  STD_LOGIC_VECTOR (integer(ceil(log2(real(DEPTH))))-1 downto 0);
              PROM_OP : out STD_LOGIC_VECTOR (HEX_SIZE-1 downto 0)
            );
@@ -198,7 +198,7 @@ PROM: PROM_IMG generic map (
                             HEX_SIZE => hex_size_prom
                             )
                port map (
-                          sel     => std_logic_vector(enciphered_data),
+
                           addr    => rom_addr4,
                           PROM_OP => IMG_out
                         );         

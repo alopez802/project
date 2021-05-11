@@ -46,7 +46,8 @@ entity top is
           top_key_conv      :integer := 128;
           top_depth_prom    :integer := 5;
           top_data_size     :integer := 7;
-          top_hex_size      :integer :=114
+          top_hex_size      :integer :=114;
+          top_rounds        :integer :=2
          );
 Port (
         top_clk         : in  STD_LOGIC; --clk
@@ -95,11 +96,14 @@ component Seven_Seg is
 end component;
 
 component TeaEncipher is
-    Generic(cycles: integer:=32);
+    generic(num_rounds :integer := 32);
     Port (
-        input  : in  UNSIGNED(63 downto 0);
-        key    : in  UNSIGNED(127 downto 0);
-        output : out UNSIGNED(63 downto 0)
+        clk         : in  STD_LOGIC;
+        rst         : in  STD_LOGIC;
+        input_data  : in  UNSIGNED(63 downto 0);
+        key         : in  UNSIGNED(127 downto 0);
+        output_data : out UNSIGNED(63 downto 0);
+        done        : out STD_LOGIC
     );
 end component;
 
@@ -148,11 +152,15 @@ GEN_SS: Seven_Seg
             );
 
 GEN_TEA: TeaEncipher 
-    generic map(cycles => top_cycles)
+    generic map(num_rounds  => top_rounds)
     Port map (
-        input  => top_input_data, -- top input for tea enc
-        key    => top_key, -- top key for tea enc
-        output => top_output_data
+        clk        => top_clk, -- top input for tea enc
+        rst        => top_rst, -- top key for tea enc
+        input_data => top_input_data,
+        key        => top_key,
+        output_data=> top_output_data,
+        done       => open
+        
     );
 
 

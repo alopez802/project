@@ -19,11 +19,11 @@ entity VGA_VHDL is
     generic(
     
             H_SP    :positive:= 128;  -- Horizontal Sync Pulse
-            H_BP    :positive:= 16;   -- Horizontal Back Porch
+            H_BP    :positive:= 5;   -- Horizontal Back Porch
             H_FP    :positive:= 16;   -- Horizontal Front Porch
             H_Video :positive:= 640;  -- Horizontal Video lines (Active area)
     
-            hpixels :positive:= 800;   -- Value of pixels in a horizontal line = 800 (H_SP+H_BP+H_VIDEO+H_FP)
+            hpixels :positive:= 789;   -- Value of pixels in a horizontal line = 800 (H_SP+H_BP+H_VIDEO+H_FP)
              
             hbp     :positive:= 144;   -- Horizontal back porch = 144 (128 + H_BP)
             hfp     :positive:= 784;   -- Horizontal front porch = 784 (H_SP+H_FP + H_VIDEO)
@@ -37,8 +37,8 @@ entity VGA_VHDL is
             V_FP   :positive:= 10;     -- Virtical Front Porch 
             V_Video:positive:= 480;    -- Virtical Video lines  (Active area)
             
-            vlines  :positive:= 521;   -- Number of horizontal lines in the display = V_SP + V_BP + V_Video + V_FP
-            vbp     :positive:= 31;    -- Vertical back porch = 31 (V_SP + V_BP)
+            vlines  :positive:= 524;   -- Number of horizontal lines in the display = V_SP + V_BP + V_Video + V_FP
+            vbp     :positive:= 114;    -- Vertical back porch = 31 (V_SP + V_BP)
             vfp     :positive:= 511    -- Vertical front porch = 511 (V_SP+V_BP+ V_Video)
            );
     Port ( clk   : in  STD_LOGIC;

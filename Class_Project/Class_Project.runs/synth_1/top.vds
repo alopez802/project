@@ -2,12 +2,12 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Wed May  5 22:54:49 2021
-# Process ID: 13040
-# Current directory: C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.runs/synth_1
+# Start of session at: Mon May 10 18:31:26 2021
+# Process ID: 1704
+# Current directory: C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
-# Log file: C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.runs/synth_1/top.vds
-# Journal file: C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.runs/synth_1\vivado.jou
+# Log file: C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/synth_1/top.vds
+# Journal file: C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source top.tcl -notrace
 Command: synth_design -top top -part xc7a100tcsg324-1
@@ -16,11 +16,11 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 968 
+INFO: Helper process launched with PID 21124 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 863.840 ; gain = 235.496
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 863.656 ; gain = 233.770
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/top.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top.vhd:72]
 	Parameter top_strip_hpixels bound to: 800 - type: integer 
 	Parameter top_strip_vlines bound to: 512 - type: integer 
 	Parameter top_strip_hbp bound to: 144 - type: integer 
@@ -34,22 +34,53 @@ INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/Ahiezer/Documents/ECE 43
 	Parameter top_depth_prom bound to: 5 - type: integer 
 	Parameter top_data_size bound to: 7 - type: integer 
 	Parameter top_hex_size bound to: 114 - type: integer 
-INFO: [Synth 8-3491] module 'Seven_Seg' declared at 'C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:36' bound to instance 'GEN_SS' of component 'Seven_Seg' [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/top.vhd:140]
-INFO: [Synth 8-638] synthesizing module 'Seven_Seg' [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:46]
-INFO: [Synth 8-226] default block is never used [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:104]
-WARNING: [Synth 8-614] signal 'char_7' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:102]
-WARNING: [Synth 8-614] signal 'char_6' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:102]
-WARNING: [Synth 8-614] signal 'char_5' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:102]
-WARNING: [Synth 8-614] signal 'char_4' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:102]
-WARNING: [Synth 8-614] signal 'char_3' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:102]
-WARNING: [Synth 8-614] signal 'char_2' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:102]
-WARNING: [Synth 8-614] signal 'char_1' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:102]
-INFO: [Synth 8-256] done synthesizing module 'Seven_Seg' (1#1) [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:46]
-	Parameter cycles bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'TeaEncipher' declared at 'C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:27' bound to instance 'GEN_TEA' of component 'TeaEncipher' [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/top.vhd:150]
-INFO: [Synth 8-638] synthesizing module 'TeaEncipher' [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:36]
-	Parameter cycles bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'TeaEncipher' (2#1) [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:36]
+	Parameter top_rounds bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'Seven_Seg' declared at 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:36' bound to instance 'GEN_SS' of component 'Seven_Seg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top.vhd:144]
+INFO: [Synth 8-638] synthesizing module 'Seven_Seg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:46]
+INFO: [Synth 8-226] default block is never used [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:104]
+WARNING: [Synth 8-614] signal 'char_7' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:102]
+WARNING: [Synth 8-614] signal 'char_6' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:102]
+WARNING: [Synth 8-614] signal 'char_5' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:102]
+WARNING: [Synth 8-614] signal 'char_4' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:102]
+WARNING: [Synth 8-614] signal 'char_3' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:102]
+WARNING: [Synth 8-614] signal 'char_2' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:102]
+WARNING: [Synth 8-614] signal 'char_1' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:102]
+INFO: [Synth 8-256] done synthesizing module 'Seven_Seg' (1#1) [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:46]
+	Parameter num_rounds bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'TeaEncipher' declared at 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:25' bound to instance 'GEN_TEA' of component 'TeaEncipher' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top.vhd:154]
+INFO: [Synth 8-638] synthesizing module 'TeaEncipher' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:37]
+	Parameter num_rounds bound to: 2 - type: integer 
+WARNING: [Synth 8-614] signal 'curr_state' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 'input_data' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 'sum' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 'delta' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 'next_sum' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 'v1' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 't1' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 'k0' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 't4' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 'k1' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 't2' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 't3' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 't5' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 't6' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 'v0' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 't7' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 'next_v0' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 't8' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 'k2' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 't11' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 'k3' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 't9' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 't10' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 't12' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 't13' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 't14' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 'next_v1' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 'round' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 'next_round' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'TeaEncipher' (2#1) [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:37]
 	Parameter strip_hpixels bound to: 800 - type: integer 
 	Parameter strip_vlines bound to: 512 - type: integer 
 	Parameter strip_hbp bound to: 144 - type: integer 
@@ -60,8 +91,8 @@ INFO: [Synth 8-256] done synthesizing module 'TeaEncipher' (2#1) [C:/Users/Ahiez
 	Parameter depth_prom bound to: 5 - type: integer 
 	Parameter data_size_prom bound to: 7 - type: integer 
 	Parameter hex_size_prom bound to: 114 - type: integer 
-INFO: [Synth 8-3491] module 'vga_initials_top' declared at 'C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/vga_intials_top.vhd:36' bound to instance 'GEN_VGA' of component 'vga_initials_top' [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/top.vhd:159]
-INFO: [Synth 8-638] synthesizing module 'vga_initials_top' [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/vga_intials_top.vhd:60]
+INFO: [Synth 8-3491] module 'vga_initials_top' declared at 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/vga_intials_top.vhd:36' bound to instance 'GEN_VGA' of component 'vga_initials_top' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'vga_initials_top' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/vga_intials_top.vhd:60]
 	Parameter strip_hpixels bound to: 800 - type: integer 
 	Parameter strip_vlines bound to: 512 - type: integer 
 	Parameter strip_hbp bound to: 144 - type: integer 
@@ -72,9 +103,9 @@ INFO: [Synth 8-638] synthesizing module 'vga_initials_top' [C:/Users/Ahiezer/Doc
 	Parameter depth_prom bound to: 5 - type: integer 
 	Parameter data_size_prom bound to: 7 - type: integer 
 	Parameter hex_size_prom bound to: 114 - type: integer 
-INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'c:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.v:71' bound to instance 'CLK_GEN_PLL' of component 'clk_wiz_0' [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/vga_intials_top.vhd:143]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [c:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.v:71]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0_clk_wiz' [c:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_clk_wiz.v:69]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'c:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.v:71' bound to instance 'CLK_GEN_PLL' of component 'clk_wiz_0' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/vga_intials_top.vhd:143]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [c:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.v:71]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0_clk_wiz' [c:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_clk_wiz.v:69]
 INFO: [Synth 8-6157] synthesizing module 'PLLE2_ADV' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:61416]
 	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
 	Parameter CLKFBOUT_MULT bound to: 8 - type: integer 
@@ -110,18 +141,18 @@ INFO: [Synth 8-6157] synthesizing module 'PLLE2_ADV' [C:/Xilinx/Vivado/2019.2/sc
 INFO: [Synth 8-6155] done synthesizing module 'PLLE2_ADV' (3#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:61416]
 INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
 INFO: [Synth 8-6155] done synthesizing module 'BUFG' (4#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0_clk_wiz' (5#1) [c:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_clk_wiz.v:69]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (6#1) [c:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0_clk_wiz' (5#1) [c:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_clk_wiz.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (6#1) [c:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.v:71]
 	Parameter hpixels bound to: 800 - type: integer 
 	Parameter vlines bound to: 512 - type: integer 
 	Parameter hbp bound to: 144 - type: integer 
 	Parameter hfp bound to: 784 - type: integer 
 	Parameter vbp bound to: 31 - type: integer 
 	Parameter vfp bound to: 511 - type: integer 
-INFO: [Synth 8-3491] module 'VGA_VHDL' declared at 'C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/vga_vhdl.vhd:17' bound to instance 'VGA_DRIVER' of component 'VGA_VHDL' [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/vga_intials_top.vhd:155]
-INFO: [Synth 8-638] synthesizing module 'VGA_VHDL' [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/vga_vhdl.vhd:54]
+INFO: [Synth 8-3491] module 'VGA_VHDL' declared at 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/vga_vhdl.vhd:17' bound to instance 'VGA_DRIVER' of component 'VGA_VHDL' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/vga_intials_top.vhd:155]
+INFO: [Synth 8-638] synthesizing module 'VGA_VHDL' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/vga_vhdl.vhd:54]
 	Parameter H_SP bound to: 128 - type: integer 
-	Parameter H_BP bound to: 16 - type: integer 
+	Parameter H_BP bound to: 5 - type: integer 
 	Parameter H_FP bound to: 16 - type: integer 
 	Parameter H_Video bound to: 640 - type: integer 
 	Parameter hpixels bound to: 800 - type: integer 
@@ -134,48 +165,112 @@ INFO: [Synth 8-638] synthesizing module 'VGA_VHDL' [C:/Users/Ahiezer/Documents/E
 	Parameter vlines bound to: 512 - type: integer 
 	Parameter vbp bound to: 31 - type: integer 
 	Parameter vfp bound to: 511 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'VGA_VHDL' (7#1) [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/vga_vhdl.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'VGA_VHDL' (7#1) [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/vga_vhdl.vhd:54]
 	Parameter hbp bound to: 144 - type: integer 
 	Parameter vbp bound to: 31 - type: integer 
 	Parameter W bound to: 114 - type: integer 
 	Parameter H bound to: 16 - type: integer 
-INFO: [Synth 8-3491] module 'vga_initials' declared at 'C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/vga_initials.vhd:18' bound to instance 'INIT' of component 'vga_initials' [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/vga_intials_top.vhd:175]
-INFO: [Synth 8-638] synthesizing module 'vga_initials' [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/vga_initials.vhd:35]
+INFO: [Synth 8-3491] module 'vga_initials' declared at 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/vga_initials.vhd:18' bound to instance 'INIT' of component 'vga_initials' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/vga_intials_top.vhd:175]
+INFO: [Synth 8-638] synthesizing module 'vga_initials' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/vga_initials.vhd:35]
 	Parameter hbp bound to: 144 - type: integer 
 	Parameter vbp bound to: 31 - type: integer 
 	Parameter W bound to: 114 - type: integer 
 	Parameter H bound to: 16 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'vga_initials' (8#1) [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/vga_initials.vhd:35]
+INFO: [Synth 8-256] done synthesizing module 'vga_initials' (8#1) [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/vga_initials.vhd:35]
 	Parameter DEPTH bound to: 5 - type: integer 
 	Parameter DATA_SIZE bound to: 7 - type: integer 
 	Parameter HEX_SIZE bound to: 114 - type: integer 
-INFO: [Synth 8-3491] module 'PROM_IMG' declared at 'C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/PROM.vhd:59' bound to instance 'PROM' of component 'PROM_IMG' [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/vga_intials_top.vhd:100]
-INFO: [Synth 8-638] synthesizing module 'PROM_IMG' [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/PROM.vhd:71]
+INFO: [Synth 8-3491] module 'PROM_IMG' declared at 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/PROM.vhd:59' bound to instance 'PROM' of component 'PROM_IMG' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/vga_intials_top.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'PROM_IMG' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/PROM.vhd:71]
 	Parameter DEPTH bound to: 5 - type: integer 
 	Parameter DATA_SIZE bound to: 7 - type: integer 
 	Parameter HEX_SIZE bound to: 114 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'PROM_IMG' (9#1) [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/PROM.vhd:71]
-INFO: [Synth 8-256] done synthesizing module 'vga_initials_top' (10#1) [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/vga_intials_top.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'PROM_IMG' (9#1) [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/PROM.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'vga_initials_top' (10#1) [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/vga_intials_top.vhd:60]
 	Parameter g_CLK_PER_BIT bound to: 869 - type: integer 
 	Parameter g_DATA_SIZE bound to: 64 - type: integer 
 	Parameter g_KEY_SIZE bound to: 128 - type: integer 
-INFO: [Synth 8-3491] module 'top_conv' declared at 'C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/top_conv.vhd:36' bound to instance 'GEN_TOP_CONV' of component 'top_conv' [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/top.vhd:184]
-INFO: [Synth 8-638] synthesizing module 'top_conv' [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/top_conv.vhd:51]
+INFO: [Synth 8-3491] module 'top_conv' declared at 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top_conv.vhd:36' bound to instance 'GEN_TOP_CONV' of component 'top_conv' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'top_conv' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top_conv.vhd:51]
 	Parameter g_CLK_PER_BIT bound to: 869 - type: integer 
 	Parameter g_DATA_SIZE bound to: 64 - type: integer 
 	Parameter g_KEY_SIZE bound to: 128 - type: integer 
 	Parameter g_CLKS_PER_BIT bound to: 869 - type: integer 
-INFO: [Synth 8-3491] module 'UART_RX' declared at 'C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/UART_RX.vhd:5' bound to instance 'BYTE_RX' of component 'UART_RX' [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/top_conv.vhd:90]
-INFO: [Synth 8-638] synthesizing module 'UART_RX' [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/UART_RX.vhd:18]
+INFO: [Synth 8-3491] module 'UART_RX' declared at 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/UART_RX.vhd:5' bound to instance 'BYTE_RX' of component 'UART_RX' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top_conv.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'UART_RX' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/UART_RX.vhd:18]
 	Parameter g_CLKS_PER_BIT bound to: 869 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'UART_RX' (11#1) [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/UART_RX.vhd:18]
-INFO: [Synth 8-3491] module 'ascii_hex' declared at 'C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/ascii_hex.vhd:34' bound to instance 'CONVERT' of component 'ascii_hex' [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/top_conv.vhd:101]
-INFO: [Synth 8-638] synthesizing module 'ascii_hex' [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/ascii_hex.vhd:43]
-INFO: [Synth 8-256] done synthesizing module 'ascii_hex' (12#1) [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/ascii_hex.vhd:43]
-INFO: [Synth 8-256] done synthesizing module 'top_conv' (13#1) [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/top_conv.vhd:51]
-INFO: [Synth 8-256] done synthesizing module 'top' (14#1) [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/top.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'UART_RX' (11#1) [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/UART_RX.vhd:18]
+INFO: [Synth 8-3491] module 'ascii_hex' declared at 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/ascii_hex.vhd:34' bound to instance 'CONVERT' of component 'ascii_hex' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top_conv.vhd:101]
+INFO: [Synth 8-638] synthesizing module 'ascii_hex' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/ascii_hex.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'ascii_hex' (12#1) [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/ascii_hex.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'top_conv' (13#1) [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top_conv.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'top' (14#1) [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top.vhd:72]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[63]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[62]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[61]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[60]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[59]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[58]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[57]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[56]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[55]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[54]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[53]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[52]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[51]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[50]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[49]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[48]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[47]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[46]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[45]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[44]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[43]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[42]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[41]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[40]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[39]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[38]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[37]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[36]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[35]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[34]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[33]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[32]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[31]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[30]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[29]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[28]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[27]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[26]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[25]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[24]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[23]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[22]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[21]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[20]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[19]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[18]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[17]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[16]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[15]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[14]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[13]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[12]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[11]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[10]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[9]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[8]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[7]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[6]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[5]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[4]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[3]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[2]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[1]
+WARNING: [Synth 8-3331] design vga_initials_top has unconnected port enciphered_data[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 938.344 ; gain = 310.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 937.789 ; gain = 307.902
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -188,64 +283,143 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 938.344 ; gain = 310.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 937.789 ; gain = 307.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 938.344 ; gain = 310.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 937.789 ; gain = 307.902
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.121 . Memory (MB): peak = 938.344 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 937.789 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_board.xdc] for cell 'GEN_VGA/CLK_GEN_PLL/inst'
-Finished Parsing XDC File [c:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_board.xdc] for cell 'GEN_VGA/CLK_GEN_PLL/inst'
-Parsing XDC File [c:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc] for cell 'GEN_VGA/CLK_GEN_PLL/inst'
-Finished Parsing XDC File [c:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc] for cell 'GEN_VGA/CLK_GEN_PLL/inst'
+Parsing XDC File [c:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_board.xdc] for cell 'GEN_VGA/CLK_GEN_PLL/inst'
+Finished Parsing XDC File [c:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_board.xdc] for cell 'GEN_VGA/CLK_GEN_PLL/inst'
+Parsing XDC File [c:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc] for cell 'GEN_VGA/CLK_GEN_PLL/inst'
+Finished Parsing XDC File [c:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc] for cell 'GEN_VGA/CLK_GEN_PLL/inst'
 Parsing XDC File [C:/Users/Ahiezer/Downloads/Nexys_A7-100T1.xdc]
 Finished Parsing XDC File [C:/Users/Ahiezer/Downloads/Nexys_A7-100T1.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Ahiezer/Downloads/Nexys_A7-100T1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.runs/synth_1/dont_touch.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Parsing XDC File [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Timing 38-2] Deriving generated clocks
-Parsing XDC File [c:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_late.xdc] for cell 'GEN_VGA/CLK_GEN_PLL/inst'
-Finished Parsing XDC File [c:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_late.xdc] for cell 'GEN_VGA/CLK_GEN_PLL/inst'
+Parsing XDC File [c:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_late.xdc] for cell 'GEN_VGA/CLK_GEN_PLL/inst'
+Finished Parsing XDC File [c:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_late.xdc] for cell 'GEN_VGA/CLK_GEN_PLL/inst'
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1064.441 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1050.074 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1064.441 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1050.074 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1064.441 ; gain = 436.098
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1050.074 ; gain = 420.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1064.441 ; gain = 436.098
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1050.074 ; gain = 420.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for GEN_VGA/CLK_GEN_PLL/inst. (constraint file  {C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.runs/synth_1/dont_touch.xdc}, line 10).
+Applied set_property DONT_TOUCH = true for GEN_VGA/CLK_GEN_PLL/inst. (constraint file  C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/synth_1/dont_touch.xdc, line 10).
 Applied set_property DONT_TOUCH = true for GEN_VGA/CLK_GEN_PLL. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1064.441 ; gain = 436.098
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1050.074 ; gain = 420.188
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-4471] merging register 'G_reg' into 'R_reg' [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/vga_initials.vhd:76]
-INFO: [Synth 8-4471] merging register 'B_reg' into 'R_reg' [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/vga_initials.vhd:76]
-INFO: [Synth 8-4471] merging register 'green_reg[2:0]' into 'red_reg[2:0]' [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/vga_initials.vhd:70]
-INFO: [Synth 8-4471] merging register 'blue_reg[2:0]' into 'red_reg[2:0]' [C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.srcs/sources_1/new/vga_initials.vhd:71]
+INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'TeaEncipher'
+INFO: [Synth 8-5546] ROM "output_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_v1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_v0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t14" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t13" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t12" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t11" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t10" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t9" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t8" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t7" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t6" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t5" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t4" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "t1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_round" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "round" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_sum" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sum" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'G_reg' into 'R_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/vga_initials.vhd:76]
+INFO: [Synth 8-4471] merging register 'B_reg' into 'R_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/vga_initials.vhd:76]
+INFO: [Synth 8-4471] merging register 'green_reg[2:0]' into 'red_reg[2:0]' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/vga_initials.vhd:70]
+INFO: [Synth 8-4471] merging register 'blue_reg[2:0]' into 'red_reg[2:0]' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/vga_initials.vhd:71]
 INFO: [Synth 8-5544] ROM "mem" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top_conv'
+WARNING: [Synth 8-327] inferring latch for variable 'output_data_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:171]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |        0000000000000000000000001 |                            00000
+                      s1 |        0000000000000000000000010 |                            00001
+                      s2 |        0000000000000000000000100 |                            00010
+                      s3 |        0000000000000000000001000 |                            00011
+                      s4 |        0000000000000000000010000 |                            00100
+                      s5 |        0000000000000000000100000 |                            00101
+                      s6 |        0000000000000000001000000 |                            00110
+                      s7 |        0000000000000000010000000 |                            00111
+                      s8 |        0000000000000000100000000 |                            01000
+                      s9 |        0000000000000001000000000 |                            01001
+                     s10 |        0000000000000010000000000 |                            01010
+                     s11 |        0000000000000100000000000 |                            01011
+                     s12 |        0000000000001000000000000 |                            01100
+                     s13 |        0000000000010000000000000 |                            01101
+                     s14 |        0000000000100000000000000 |                            01110
+                     s15 |        0000000001000000000000000 |                            01111
+                     s16 |        0000000010000000000000000 |                            10000
+                     s17 |        0000000100000000000000000 |                            10001
+                     s18 |        0000001000000000000000000 |                            10010
+                     s19 |        0000010000000000000000000 |                            10011
+                     s20 |        0000100000000000000000000 |                            10100
+                     s21 |        0001000000000000000000000 |                            10101
+                     s22 |        0010000000000000000000000 |                            10110
+                     s23 |        0100000000000000000000000 |                            10111
+                     s24 |        1000000000000000000000000 |                            11000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'one-hot' in module 'TeaEncipher'
+WARNING: [Synth 8-327] inferring latch for variable 'done_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:73]
+WARNING: [Synth 8-327] inferring latch for variable 'v1_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:92]
+WARNING: [Synth 8-327] inferring latch for variable 'v0_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:93]
+WARNING: [Synth 8-327] inferring latch for variable 't14_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:91]
+WARNING: [Synth 8-327] inferring latch for variable 't7_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:84]
+WARNING: [Synth 8-327] inferring latch for variable 'next_v0_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:94]
+WARNING: [Synth 8-327] inferring latch for variable 'next_v1_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:95]
+WARNING: [Synth 8-327] inferring latch for variable 't13_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:90]
+WARNING: [Synth 8-327] inferring latch for variable 't12_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:89]
+WARNING: [Synth 8-327] inferring latch for variable 't10_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:87]
+WARNING: [Synth 8-327] inferring latch for variable 't9_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:86]
+WARNING: [Synth 8-327] inferring latch for variable 't11_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:88]
+WARNING: [Synth 8-327] inferring latch for variable 'sum_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:74]
+WARNING: [Synth 8-327] inferring latch for variable 't8_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:85]
+WARNING: [Synth 8-327] inferring latch for variable 't6_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:83]
+WARNING: [Synth 8-327] inferring latch for variable 't5_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:82]
+WARNING: [Synth 8-327] inferring latch for variable 't3_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:80]
+WARNING: [Synth 8-327] inferring latch for variable 't2_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:79]
+WARNING: [Synth 8-327] inferring latch for variable 't4_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:81]
+WARNING: [Synth 8-327] inferring latch for variable 't1_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:78]
+WARNING: [Synth 8-327] inferring latch for variable 'round_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:76]
+WARNING: [Synth 8-327] inferring latch for variable 'next_round_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'next_sum_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:75]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -255,7 +429,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top_c
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'top_conv'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1064.441 ; gain = 436.098
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1050.074 ; gain = 420.188
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -268,14 +442,15 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 256   
+	   2 Input     32 Bit       Adders := 9     
 	   2 Input     31 Bit       Adders := 1     
 	   3 Input     12 Bit       Adders := 2     
 	   3 Input     11 Bit       Adders := 1     
 	   2 Input     10 Bit       Adders := 8     
+	   2 Input      8 Bit       Adders := 1     
 	   2 Input      3 Bit       Adders := 1     
 +---XORs : 
-	   3 Input     32 Bit         XORs := 64    
+	   2 Input     32 Bit         XORs := 4     
 +---Registers : 
 	              128 Bit    Registers := 1     
 	               64 Bit    Registers := 1     
@@ -290,15 +465,17 @@ Detailed RTL Component Info :
 	   6 Input    112 Bit        Muxes := 1     
 	   2 Input     64 Bit        Muxes := 2     
 	   3 Input     64 Bit        Muxes := 1     
+	  25 Input     32 Bit        Muxes := 20    
 	   2 Input     31 Bit        Muxes := 3     
+	  25 Input     25 Bit        Muxes := 1     
+	   2 Input     25 Bit        Muxes := 2     
 	   2 Input     10 Bit        Muxes := 3     
 	   6 Input     10 Bit        Muxes := 1     
-	   8 Input      8 Bit        Muxes := 1     
+	  25 Input      8 Bit        Muxes := 2     
 	   6 Input      8 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 2     
 	   2 Input      7 Bit        Muxes := 1     
-	   8 Input      7 Bit        Muxes := 1     
-	  16 Input      7 Bit        Muxes := 16    
 	   8 Input      5 Bit        Muxes := 1     
 	   6 Input      4 Bit        Muxes := 2     
 	   2 Input      4 Bit        Muxes := 2     
@@ -307,6 +484,7 @@ Detailed RTL Component Info :
 	   3 Input      3 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 1     
 	   3 Input      2 Bit        Muxes := 1     
+	  25 Input      1 Bit        Muxes := 23    
 	   6 Input      1 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 1     
 	   5 Input      1 Bit        Muxes := 1     
@@ -321,16 +499,22 @@ Hierarchical RTL Component report
 Module Seven_Seg 
 Detailed RTL Component Info : 
 +---Muxes : 
-	   8 Input      8 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 2     
 	   2 Input      7 Bit        Muxes := 1     
-	   8 Input      7 Bit        Muxes := 1     
 	   8 Input      5 Bit        Muxes := 1     
 Module TeaEncipher 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 256   
+	   2 Input     32 Bit       Adders := 9     
+	   2 Input      8 Bit       Adders := 1     
 +---XORs : 
-	   3 Input     32 Bit         XORs := 64    
+	   2 Input     32 Bit         XORs := 4     
++---Muxes : 
+	  25 Input     32 Bit        Muxes := 20    
+	  25 Input     25 Bit        Muxes := 1     
+	   2 Input     25 Bit        Muxes := 2     
+	  25 Input      8 Bit        Muxes := 2     
+	  25 Input      1 Bit        Muxes := 23    
 Module VGA_VHDL 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -353,7 +537,6 @@ Module PROM_IMG
 Detailed RTL Component Info : 
 +---Muxes : 
 	   6 Input    112 Bit        Muxes := 1     
-	  16 Input      7 Bit        Muxes := 16    
 Module UART_RX 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -416,36 +599,114 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design top has port top_En[7] driven by constant 1
 WARNING: [Synth 8-3917] design top has port top_SS[0] driven by constant 0
 WARNING: [Synth 8-3917] design top has port top_DP driven by constant 1
 INFO: [Synth 8-3886] merging instance 'GEN_VGA/INIT/red_reg[0]' (FDCE) to 'GEN_VGA/INIT/red_reg[1]'
 INFO: [Synth 8-3886] merging instance 'GEN_VGA/INIT/red_reg[1]' (FDCE) to 'GEN_VGA/INIT/red_reg[2]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[14]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[7]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[11]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[7]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[9]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[7]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[8]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[7]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[13]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[7]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[12]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[7]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[10]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[7]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[7]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[15]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[30]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[15]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[29]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[15]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[28]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[15]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[27]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[15]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[26]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[15]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[25]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[15]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[24]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[15]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[23]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[15]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[22]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[15]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[21]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[15]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[20]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[15]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[19]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[15]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[18]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[15]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[17]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[15]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[16]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[15]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GEN_TOP_CONV/state_index_reg[15] )
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[63]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[62]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[61]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[60]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[59]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[58]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[57]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[56]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[55]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[54]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[53]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[52]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[51]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[50]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[49]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[48]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[47]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[46]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[45]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[44]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[43]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[42]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[41]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[40]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[39]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[38]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[37]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[36]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[35]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[34]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[33]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[32]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[31]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[30]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[29]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[28]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[27]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[26]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[25]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[23]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[22]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[21]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[20]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[19]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[14]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[23]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[22]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[21]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[20]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[19]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[14]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/done_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/v1_reg[31]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/v1_reg[30]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/v1_reg[29]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/v1_reg[28]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/v1_reg[27]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/v1_reg[26]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/v1_reg[25]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/v1_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/v1_reg[23]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (GEN_TEA/v1_reg[22]) is unused and will be removed from module top.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1064.441 ; gain = 436.098
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1050.074 ; gain = 420.188
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -457,13 +718,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:35 . Memory (MB): peak = 1064.441 ; gain = 436.098
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1050.074 ; gain = 420.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:40 . Memory (MB): peak = 1088.602 ; gain = 460.258
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1050.074 ; gain = 420.188
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -475,7 +736,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 1100.969 ; gain = 472.625
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1050.074 ; gain = 420.188
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -499,13 +760,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 1105.465 ; gain = 477.121
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1050.074 ; gain = 420.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 1105.465 ; gain = 477.121
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1050.074 ; gain = 420.188
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -524,25 +785,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1105.465 ; gain = 477.121
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1050.074 ; gain = 420.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1105.465 ; gain = 477.121
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1050.074 ; gain = 420.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1105.465 ; gain = 477.121
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1050.074 ; gain = 420.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1105.465 ; gain = 477.121
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1050.074 ; gain = 420.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -559,60 +820,57 @@ Report Cell Usage:
 |      |Cell      |Count |
 +------+----------+------+
 |1     |BUFG      |     4|
-|2     |CARRY4    |  2000|
-|3     |LUT1      |  1018|
-|4     |LUT2      |  3545|
-|5     |LUT3      |    34|
-|6     |LUT4      |  2109|
-|7     |LUT5      |    68|
-|8     |LUT6      |   436|
-|9     |MUXF7     |    27|
+|2     |CARRY4    |    16|
+|3     |LUT1      |     9|
+|4     |LUT2      |    20|
+|5     |LUT3      |    18|
+|6     |LUT4      |    19|
+|7     |LUT5      |    15|
+|8     |LUT6      |    29|
+|9     |MUXF7     |     5|
 |10    |PLLE2_ADV |     1|
 |11    |FDCE      |    25|
 |12    |FDPE      |     1|
-|13    |FDRE      |   257|
-|14    |FDSE      |     1|
-|15    |IBUF      |    14|
-|16    |OBUF      |    27|
+|13    |FDRE      |    20|
+|14    |IBUF      |    12|
+|15    |OBUF      |    27|
 +------+----------+------+
 
 Report Instance Areas: 
 +------+----------------+------------------+------+
 |      |Instance        |Module            |Cells |
 +------+----------------+------------------+------+
-|1     |top             |                  |  9567|
-|2     |  GEN_SS        |Seven_Seg         |    39|
-|3     |  GEN_TOP_CONV  |top_conv          |  5999|
-|4     |    BYTE_RX     |UART_RX           |    72|
-|5     |  GEN_VGA       |vga_initials_top  |   347|
-|6     |    CLK_GEN_PLL |clk_wiz_0         |     4|
-|7     |      inst      |clk_wiz_0_clk_wiz |     4|
-|8     |    INIT        |vga_initials      |    16|
-|9     |    VGA_DRIVER  |VGA_VHDL          |   327|
+|1     |top             |                  |   221|
+|2     |  GEN_SS        |Seven_Seg         |    38|
+|3     |  GEN_VGA       |vga_initials_top  |   143|
+|4     |    CLK_GEN_PLL |clk_wiz_0         |     4|
+|5     |      inst      |clk_wiz_0_clk_wiz |     4|
+|6     |    INIT        |vga_initials      |    22|
+|7     |    VGA_DRIVER  |VGA_VHDL          |   117|
 +------+----------------+------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1105.465 ; gain = 477.121
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1050.074 ; gain = 420.188
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:39 ; elapsed = 00:00:45 . Memory (MB): peak = 1105.465 ; gain = 351.023
-Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:00:50 . Memory (MB): peak = 1105.465 ; gain = 477.121
+Synthesis finished with 0 errors, 0 critical warnings and 776 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 1050.074 ; gain = 307.902
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1050.074 ; gain = 420.188
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.150 . Memory (MB): peak = 1105.465 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 2028 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1050.074 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1105.465 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1056.762 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-88 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+91 Infos, 228 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:00:57 . Memory (MB): peak = 1105.465 ; gain = 766.859
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1105.465 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1056.762 ; gain = 717.184
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1056.762 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Ahiezer/Documents/ECE 4304/Class_Project/Class_Project.runs/synth_1/top.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed May  5 22:55:52 2021...
+INFO: [Common 17-206] Exiting Vivado at Mon May 10 18:32:03 2021...

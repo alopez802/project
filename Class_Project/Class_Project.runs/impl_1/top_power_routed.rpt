@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Wed May  5 22:58:48 2021
+| Date             : Mon May 10 18:33:11 2021
 | Host             : LAPTOP-E46NNAVE running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.371        |
+| Total On-Chip Power (W)  | 0.203        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.274        |
-| Device Static (W)        | 0.098        |
+| Dynamic (W)              | 0.106        |
+| Device Static (W)        | 0.097        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 83.3         |
-| Junction Temperature (C) | 26.7         |
+| Max Ambient (C)          | 84.1         |
+| Junction Temperature (C) | 25.9         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,18 +52,18 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.004 |        5 |       --- |             --- |
-| Slice Logic    |     0.059 |     9545 |       --- |             --- |
-|   LUT as Logic |     0.044 |     7151 |     63400 |           11.28 |
-|   CARRY4       |     0.015 |     2000 |     15850 |           12.62 |
-|   F7/F8 Muxes  |    <0.001 |       27 |     63400 |            0.04 |
-|   Register     |    <0.001 |      295 |    126800 |            0.23 |
-|   Others       |     0.000 |       13 |       --- |             --- |
-| Signals        |     0.106 |     9936 |       --- |             --- |
+| Clocks         |     0.002 |        5 |       --- |             --- |
+| Slice Logic    |    <0.001 |      194 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       87 |     63400 |            0.14 |
+|   CARRY4       |    <0.001 |       16 |     15850 |            0.10 |
+|   Register     |    <0.001 |       54 |    126800 |            0.04 |
+|   F7/F8 Muxes  |    <0.001 |        5 |     63400 |           <0.01 |
+|   Others       |     0.000 |        9 |       --- |             --- |
+| Signals        |    <0.001 |      125 |       --- |             --- |
 | PLL            |     0.095 |        1 |         6 |           16.67 |
-| I/O            |     0.010 |       41 |       210 |           19.52 |
-| Static Power   |     0.098 |          |           |                 |
-| Total          |     0.371 |          |           |                 |
+| I/O            |     0.009 |       39 |       210 |           18.57 |
+| Static Power   |     0.097 |          |           |                 |
+| Total          |     0.203 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.192 |       0.177 |      0.016 |
+| Vccint    |       1.000 |     0.025 |       0.010 |      0.015 |
 | Vccaux    |       1.800 |     0.067 |       0.049 |      0.018 |
 | Vcco33    |       3.300 |     0.007 |       0.003 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -144,12 +144,10 @@ Table of Contents
 +-----------------+-----------+
 | Name            | Power (W) |
 +-----------------+-----------+
-| top             |     0.274 |
-|   GEN_TOP_CONV  |     0.124 |
-|   GEN_VGA       |     0.098 |
+| top             |     0.106 |
+|   GEN_VGA       |     0.096 |
 |     CLK_GEN_PLL |     0.095 |
 |       inst      |     0.095 |
-|     VGA_DRIVER  |     0.003 |
 +-----------------+-----------+
 
 

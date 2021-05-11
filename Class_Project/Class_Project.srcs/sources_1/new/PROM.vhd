@@ -62,7 +62,7 @@ entity PROM_IMG is
 			HEX_SIZE :positive:= 114
            );
     Port   ( 
-			 sel     : in STD_LOGIC_VECTOR(63 downto 0);
+	
 			 addr    : in  STD_LOGIC_VECTOR (integer(ceil(log2(real(DEPTH))))-1 downto 0);
              PROM_OP : out STD_LOGIC_VECTOR (HEX_SIZE-1 downto 0)
            );
@@ -70,6 +70,7 @@ end PROM_IMG;
 
 architecture Behavioral of PROM_IMG is
 
+signal sel: STD_LOGIC_VECTOR (63 downto 0):= x"0123456789abcdef";
 signal temp: STD_LOGIC_VECTOR(HEX_SIZE-3 downto 0);
 
 type mem_type is array (0 to DEPTH-1) of std_logic_vector(HEX_SIZE-3 downto 0);
