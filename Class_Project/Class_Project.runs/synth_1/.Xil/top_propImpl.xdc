@@ -17,8 +17,8 @@ set_property src_info {type:XDC file:1 line:37 export:INPUT save:INPUT read:READ
 set_property -dict { PACKAGE_PIN U18   IOSTANDARD LVCMOS33 } [get_ports { top_vga_sw[6] }]; #IO_L17N_T2_A13_D29_14 Sch=sw[6]
 set_property src_info {type:XDC file:1 line:39 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN R13   IOSTANDARD LVCMOS33 } [get_ports { top_vga_sw[7] }]; #IO_L5N_T0_D07_14 Sch=sw[7]
-set_property src_info {type:XDC file:1 line:41 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { PACKAGE_PIN T8    IOSTANDARD LVCMOS18 } [get_ports { top_d_e_SS }]; #IO_L24N_T3_34 Sch=sw[8]
+set_property src_info {type:XDC file:1 line:55 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN V10 IOSTANDARD LVCMOS33} [get_ports {top_d_e_SS}]
 set_property src_info {type:XDC file:1 line:119 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN T10   IOSTANDARD LVCMOS33 } [get_ports { top_SS[6] }]; #IO_L24N_T3_A00_D16_14 Sch=ca
 set_property src_info {type:XDC file:1 line:121 export:INPUT save:INPUT read:READ} [current_design]

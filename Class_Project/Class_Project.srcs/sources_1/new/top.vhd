@@ -180,7 +180,7 @@ GEN_VGA: vga_initials_top
     Port map( 
            clk   => top_clk, -- top clk for vga
            rst   => top_vga_rst, -- top vga reset
-           enciphered_data  => top_output_data,
+           enciphered_data  => top_input_data,
            vga_sw           => top_vga_sw,
            hsync => top_hsync, -- top output for hsync
            vsync => top_vsync, -- top output for vsync

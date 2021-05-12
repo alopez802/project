@@ -96,7 +96,7 @@ component PROM_IMG is
 			HEX_SIZE :positive:= 114
            );
     Port   ( 
-
+             sel: STD_LOGIC_VECTOR (63 downto 0);
 			 addr    : in  STD_LOGIC_VECTOR (integer(ceil(log2(real(DEPTH))))-1 downto 0);
              PROM_OP : out STD_LOGIC_VECTOR (HEX_SIZE-1 downto 0)
            );
@@ -129,7 +129,8 @@ signal steady_clk100MHz:std_logic;
 
 signal hc, vc:std_logic_vector(9 downto 0); 
 signal video_on :std_logic; 
-signal IMG_in, IMG_out:std_logic_vector(hex_size_prom-1 downto 0); 
+signal IMG_in,IMG_out:std_logic_vector(hex_size_prom-1 downto 0); 
+
 signal IMG:std_logic_vector(31 downto 0); 
 signal rom_addr4:std_logic_vector(2 downto 0); 
 
@@ -176,7 +177,7 @@ INIT: vga_initials
     generic map ( hbp =>144, 
                   vbp =>31, 
                   W   =>114, 
-                  H   =>16 
+                  H   =>5 
                 )
     Port map ( 
                    clk       => steady_clk25MHz,
@@ -198,7 +199,7 @@ PROM: PROM_IMG generic map (
                             HEX_SIZE => hex_size_prom
                             )
                port map (
-
+                          sel     => std_logic_vector(enciphered_data),
                           addr    => rom_addr4,
                           PROM_OP => IMG_out
                         );         
