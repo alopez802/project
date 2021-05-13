@@ -83,6 +83,7 @@ end component;
     signal temp           : STD_LOGIC_VECTOR(7 downto 0):= (others => '0');     -- Byte received by uart
     
     signal data           : STD_LOGIC_VECTOR(g_DATA_SIZE - 1 downto 0):= (others => '0');
+    signal temp_data      : STD_LOGIC_VECTOR(g_DATA_SIZE - 1 downto 0):= (others => '0');
     signal key            : STD_LOGIC_VECTOR(g_KEY_SIZE - 1 downto 0):= (others => '0');
 
 begin
@@ -171,9 +172,13 @@ begin
             end if;
        end if;
     end process STATE_CONTROL;
+    
+    temp_data <= data(3 downto 0) & data(7 downto 4) &  data(11 downto 8) &  data(15 downto 12) &
+         data(19 downto 16) & data(23 downto 20) & data(27 downto 24) & data(31 downto 28) & data(35 downto 32) & data(39 downto 36) & data(43 downto 40)
+          & data(47 downto 44) & data(51 downto 48) & data(55 downto 52) & data(59 downto 56) & data(63 downto 60);  
 
     --co_done <= temp_done;
-    o_data  <= UNSIGNED(data);
+    o_data  <= UNSIGNED(temp_data);
     o_key   <= UNSIGNED(key);
 
 end Behavioral;

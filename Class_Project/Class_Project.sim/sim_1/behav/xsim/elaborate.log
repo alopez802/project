@@ -1,9 +1,11 @@
 Vivado Simulator 2019.2
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto dabd374fa1be42fdb4adfb073f273dff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TeaDecipherTb_behav xil_defaultlib.TeaDecipherTb xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto dabd374fa1be42fdb4adfb073f273dff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot TeaCollectorTb_behav xil_defaultlib.TeaCollectorTb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-4940] 'uarttx' remains a black box since it has no binding entity [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sim_1/new/top_conv_tb.vhd:83]
+WARNING: [VRFC 10-4940] 'teacollector' remains a black box since it has no binding entity [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sim_1/new/top_conv_tb.vhd:97]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -11,9 +13,6 @@ Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
-Compiling package ieee.numeric_std
-Compiling package ieee.math_real
 Compiling module xil_defaultlib.glbl
-Compiling architecture behavioral of entity xil_defaultlib.TeaDecipher [teadecipher_default]
-Compiling architecture behavioral of entity xil_defaultlib.teadeciphertb
-Built simulation snapshot TeaDecipherTb_behav
+Compiling architecture behavioral of entity xil_defaultlib.teacollectortb
+Built simulation snapshot TeaCollectorTb_behav

@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Wed May 12 12:47:34 2021
+| Date             : Thu May 13 15:36:12 2021
 | Host             : LAPTOP-E46NNAVE running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -59,7 +59,7 @@ Table of Contents
 |   CARRY4       |    <0.001 |       19 |     15850 |            0.12 |
 |   F7/F8 Muxes  |    <0.001 |       23 |     63400 |            0.04 |
 |   Others       |     0.000 |       13 |       --- |             --- |
-| Signals        |    <0.001 |      490 |       --- |             --- |
+| Signals        |    <0.001 |      487 |       --- |             --- |
 | PLL            |     0.095 |        1 |         6 |           16.67 |
 | I/O            |     0.009 |       41 |       210 |           19.52 |
 | Static Power   |     0.097 |          |           |                 |
@@ -145,7 +145,7 @@ Table of Contents
 | Name            | Power (W) |
 +-----------------+-----------+
 | top             |     0.108 |
-|   GEN_TOP_CONV  |     0.003 |
+|   GEN_TOP_CONV  |     0.002 |
 |   GEN_VGA       |     0.096 |
 |     CLK_GEN_PLL |     0.095 |
 |       inst      |     0.095 |
