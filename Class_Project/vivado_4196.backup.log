@@ -1,0 +1,978 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri May 14 12:35:57 2021
+# Process ID: 4196
+# Current directory: C:/Users/Ahiezer/Documents/GitHub/project/Class_Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13104 C:\Users\Ahiezer\Documents\GitHub\project\Class_Project\Class_Project.xpr
+# Log file: C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/vivado.log
+# Journal file: C:/Users/Ahiezer/Documents/GitHub/project/Class_Project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 826.641 ; gain = 120.660
+update_compile_order -fileset sources_1
+close [ open C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/test_tea_top.v w ]
+add_files C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/test_tea_top.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/test_tea.vhd w ]
+add_files C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/test_tea.vhd
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/test_tea_top.v] -no_script -reset -force -quiet
+remove_files  C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/test_tea_top.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sim_1/new/test_tea_tb.vhd w ]
+add_files -fileset sim_1 C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sim_1/new/test_tea_tb.vhd
+update_compile_order -fileset sim_1
+set_property top test_tea_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_tea_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_tea_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+"xvhdl --incr --relax -prj test_tea_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/PROM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'PROM_IMG'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TeaEncipher'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/test_tea.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'test_tea'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/vga_initials.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'vga_initials'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/vga_intials_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'vga_initials_top'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/vga_vhdl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'VGA_VHDL'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sim_1/new/test_tea_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'test_tea_tb'
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 986.641 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '8' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.sim/sim_1/behav/xsim'
+"xelab -wto dabd374fa1be42fdb4adfb073f273dff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_tea_tb_behav xil_defaultlib.test_tea_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto dabd374fa1be42fdb4adfb073f273dff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_tea_tb_behav xil_defaultlib.test_tea_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3311] expression has 64 elements ; formal 'key' expects 128 [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/test_tea.vhd:113]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 986.641 ; gain = 13.332
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_tea_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_tea_tb_vlog.prj"
+"xvhdl --incr --relax -prj test_tea_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/test_tea.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'test_tea'
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 987.059 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '7' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.sim/sim_1/behav/xsim'
+"xelab -wto dabd374fa1be42fdb4adfb073f273dff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_tea_tb_behav xil_defaultlib.test_tea_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto dabd374fa1be42fdb4adfb073f273dff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_tea_tb_behav xil_defaultlib.test_tea_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.TeaEncipher [teaencipher_default]
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=8,CLKIN1...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling architecture behavioral of entity xil_defaultlib.VGA_VHDL [\VGA_VHDL(hpixels=800,vlines=512...]
+Compiling architecture behavioral of entity xil_defaultlib.vga_initials [\vga_initials(w=114)\]
+Compiling architecture behavioral of entity xil_defaultlib.PROM_IMG [prom_img_default]
+Compiling architecture behavioral of entity xil_defaultlib.vga_initials_top [vga_initials_top_default]
+Compiling architecture behavioral of entity xil_defaultlib.test_tea [test_tea_default]
+Compiling architecture behavioral of entity xil_defaultlib.test_tea_tb
+Built simulation snapshot test_tea_tb_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.sim/sim_1/behav/xsim/xsim.dir/test_tea_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.sim/sim_1/behav/xsim/xsim.dir/test_tea_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri May 14 14:55:45 2021. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri May 14 14:55:45 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 987.059 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '14' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_tea_tb_behav -key {Behavioral:sim_1:Functional:test_tea_tb} -tclbatch {test_tea_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source test_tea_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 1000.457 ; gain = 13.398
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_tea_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:15 ; elapsed = 00:00:28 . Memory (MB): peak = 1000.457 ; gain = 13.398
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1014.781 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_tea_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_tea_tb_vlog.prj"
+"xvhdl --incr --relax -prj test_tea_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/test_tea.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'test_tea'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sim_1/new/test_tea_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'test_tea_tb'
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1014.781 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.sim/sim_1/behav/xsim'
+"xelab -wto dabd374fa1be42fdb4adfb073f273dff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_tea_tb_behav xil_defaultlib.test_tea_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto dabd374fa1be42fdb4adfb073f273dff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_tea_tb_behav xil_defaultlib.test_tea_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.TeaEncipher [teaencipher_default]
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=8,CLKIN1...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling architecture behavioral of entity xil_defaultlib.VGA_VHDL [\VGA_VHDL(hpixels=800,vlines=512...]
+Compiling architecture behavioral of entity xil_defaultlib.vga_initials [\vga_initials(w=114)\]
+Compiling architecture behavioral of entity xil_defaultlib.PROM_IMG [prom_img_default]
+Compiling architecture behavioral of entity xil_defaultlib.vga_initials_top [vga_initials_top_default]
+Compiling architecture behavioral of entity xil_defaultlib.test_tea [test_tea_default]
+Compiling architecture behavioral of entity xil_defaultlib.test_tea_tb
+Built simulation snapshot test_tea_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1014.781 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_tea_tb_behav -key {Behavioral:sim_1:Functional:test_tea_tb} -tclbatch {test_tea_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source test_tea_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1014.781 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_tea_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:20 . Memory (MB): peak = 1014.781 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1014.781 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_tea_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_tea_tb_vlog.prj"
+"xvhdl --incr --relax -prj test_tea_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/test_tea.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'test_tea'
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1014.781 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.sim/sim_1/behav/xsim'
+"xelab -wto dabd374fa1be42fdb4adfb073f273dff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_tea_tb_behav xil_defaultlib.test_tea_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto dabd374fa1be42fdb4adfb073f273dff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_tea_tb_behav xil_defaultlib.test_tea_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.TeaEncipher [teaencipher_default]
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=8,CLKIN1...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling architecture behavioral of entity xil_defaultlib.VGA_VHDL [\VGA_VHDL(hpixels=800,vlines=512...]
+Compiling architecture behavioral of entity xil_defaultlib.vga_initials [\vga_initials(w=114)\]
+Compiling architecture behavioral of entity xil_defaultlib.PROM_IMG [prom_img_default]
+Compiling architecture behavioral of entity xil_defaultlib.vga_initials_top [vga_initials_top_default]
+Compiling architecture behavioral of entity xil_defaultlib.test_tea [test_tea_default]
+Compiling architecture behavioral of entity xil_defaultlib.test_tea_tb
+Built simulation snapshot test_tea_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1014.781 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "test_tea_tb_behav -key {Behavioral:sim_1:Functional:test_tea_tb} -tclbatch {test_tea_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source test_tea_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'test_tea_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:18 . Memory (MB): peak = 1014.781 ; gain = 0.000
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1014.781 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_tea_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_tea_tb_vlog.prj"
+"xvhdl --incr --relax -prj test_tea_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.sim/sim_1/behav/xsim'
+"xelab -wto dabd374fa1be42fdb4adfb073f273dff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_tea_tb_behav xil_defaultlib.test_tea_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto dabd374fa1be42fdb4adfb073f273dff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_tea_tb_behav xil_defaultlib.test_tea_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:21 . Memory (MB): peak = 1014.781 ; gain = 0.000
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1014.781 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'test_tea_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj test_tea_tb_vlog.prj"
+"xvhdl --incr --relax -prj test_tea_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/test_tea.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'test_tea'
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1014.781 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1014.781 ; gain = 0.000
+Command: launch_simulation -simset sim_1 -mode behavioral
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.sim/sim_1/behav/xsim'
+"xelab -wto dabd374fa1be42fdb4adfb073f273dff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_tea_tb_behav xil_defaultlib.test_tea_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto dabd374fa1be42fdb4adfb073f273dff --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_tea_tb_behav xil_defaultlib.test_tea_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.TeaEncipher [teaencipher_default]
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=8,CLKIN1...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling architecture behavioral of entity xil_defaultlib.VGA_VHDL [\VGA_VHDL(hpixels=800,vlines=512...]
+Compiling architecture behavioral of entity xil_defaultlib.vga_initials [\vga_initials(w=114)\]
+Compiling architecture behavioral of entity xil_defaultlib.PROM_IMG [prom_img_default]
+Compiling architecture behavioral of entity xil_defaultlib.vga_initials_top [vga_initials_top_default]
+Compiling architecture behavioral of entity xil_defaultlib.test_tea [test_tea_default]
+Compiling architecture behavioral of entity xil_defaultlib.test_tea_tb
+Built simulation snapshot test_tea_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1014.781 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1014.781 ; gain = 0.000
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+relaunch_xsim_kernel: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1014.781 ; gain = 0.000
+relaunch_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:26 . Memory (MB): peak = 1014.781 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri May 14 15:07:51 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/synth_1/runme.log
+[Fri May 14 15:07:51 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 06 2019-21:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 1031.871 ; gain = 17.090
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AE2358A
+open_hw_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2251.469 ; gain = 1219.598
+set_property PROGRAM.FILE {C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri May 14 15:17:03 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/synth_1/runme.log
+[Fri May 14 15:17:03 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri May 14 15:25:59 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/synth_1/runme.log
+[Fri May 14 15:25:59 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 06 2019-21:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 2293.113 ; gain = 0.375
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AE2358A
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri May 14 15:39:52 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/synth_1/runme.log
+[Fri May 14 15:39:52 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/impl_1/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: top
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2898.137 ; gain = 242.359
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top.vhd:72]
+	Parameter top_strip_hpixels bound to: 800 - type: integer 
+	Parameter top_strip_vlines bound to: 512 - type: integer 
+	Parameter top_strip_hbp bound to: 144 - type: integer 
+	Parameter top_strip_hfp bound to: 784 - type: integer 
+	Parameter top_strip_vbp bound to: 31 - type: integer 
+	Parameter top_strip_vfp bound to: 511 - type: integer 
+	Parameter top_clk_bits bound to: 869 - type: integer 
+	Parameter top_cycles bound to: 32 - type: integer 
+	Parameter top_data bound to: 64 - type: integer 
+	Parameter top_key_conv bound to: 128 - type: integer 
+	Parameter top_depth_prom bound to: 5 - type: integer 
+	Parameter top_data_size bound to: 7 - type: integer 
+	Parameter top_hex_size bound to: 114 - type: integer 
+	Parameter top_rounds bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'Seven_Seg' declared at 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:36' bound to instance 'GEN_SS' of component 'Seven_Seg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'Seven_Seg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:46]
+INFO: [Synth 8-226] default block is never used [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:104]
+WARNING: [Synth 8-614] signal 'char_7' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:102]
+WARNING: [Synth 8-614] signal 'char_6' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:102]
+WARNING: [Synth 8-614] signal 'char_5' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:102]
+WARNING: [Synth 8-614] signal 'char_4' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:102]
+WARNING: [Synth 8-614] signal 'char_3' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:102]
+WARNING: [Synth 8-614] signal 'char_2' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:102]
+WARNING: [Synth 8-614] signal 'char_1' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:102]
+INFO: [Synth 8-256] done synthesizing module 'Seven_Seg' (1#1) [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:46]
+	Parameter num_rounds bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'TeaEncipher' declared at 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:25' bound to instance 'GEN_TEA' of component 'TeaEncipher' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top.vhd:169]
+INFO: [Synth 8-638] synthesizing module 'TeaEncipher' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:37]
+	Parameter num_rounds bound to: 2 - type: integer 
+WARNING: [Synth 8-614] signal 'curr_state' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 'input_data' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 'sum' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 'delta' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 'next_sum' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 'v1' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 't1' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 'k0' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 't4' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 'k1' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 't2' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 't3' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 't5' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 't6' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 'v0' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 't7' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 'next_v0' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 't8' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 'k2' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 't11' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 'k3' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 't9' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 't10' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 't12' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 't13' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 't14' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 'next_v1' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 'round' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 'next_round' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'TeaEncipher' (2#1) [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:37]
+	Parameter strip_hpixels bound to: 800 - type: integer 
+	Parameter strip_vlines bound to: 512 - type: integer 
+	Parameter strip_hbp bound to: 144 - type: integer 
+	Parameter strip_hfp bound to: 784 - type: integer 
+	Parameter strip_vbp bound to: 31 - type: integer 
+	Parameter strip_vfp bound to: 511 - type: integer 
+	Parameter clk_bits bound to: 869 - type: integer 
+	Parameter depth_prom bound to: 5 - type: integer 
+	Parameter data_size_prom bound to: 7 - type: integer 
+	Parameter hex_size_prom bound to: 114 - type: integer 
+INFO: [Synth 8-3491] module 'vga_initials_top' declared at 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/vga_intials_top.vhd:36' bound to instance 'GEN_VGA' of component 'vga_initials_top' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top.vhd:182]
+INFO: [Synth 8-638] synthesizing module 'vga_initials_top' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/vga_intials_top.vhd:60]
+	Parameter strip_hpixels bound to: 800 - type: integer 
+	Parameter strip_vlines bound to: 512 - type: integer 
+	Parameter strip_hbp bound to: 144 - type: integer 
+	Parameter strip_hfp bound to: 784 - type: integer 
+	Parameter strip_vbp bound to: 31 - type: integer 
+	Parameter strip_vfp bound to: 511 - type: integer 
+	Parameter clk_bits bound to: 869 - type: integer 
+	Parameter depth_prom bound to: 5 - type: integer 
+	Parameter data_size_prom bound to: 7 - type: integer 
+	Parameter hex_size_prom bound to: 114 - type: integer 
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'c:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.v:71' bound to instance 'CLK_GEN_PLL' of component 'clk_wiz_0' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/vga_intials_top.vhd:144]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [c:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.v:71]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0_clk_wiz' [c:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_clk_wiz.v:69]
+INFO: [Synth 8-6157] synthesizing module 'PLLE2_ADV' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:61416]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 8 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE bound to: 32 - type: integer 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_DIVIDE bound to: 8 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: double 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'PLLE2_ADV' (3#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:61416]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (4#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0_clk_wiz' (5#1) [c:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_clk_wiz.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (6#1) [c:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.v:71]
+	Parameter hpixels bound to: 800 - type: integer 
+	Parameter vlines bound to: 512 - type: integer 
+	Parameter hbp bound to: 144 - type: integer 
+	Parameter hfp bound to: 784 - type: integer 
+	Parameter vbp bound to: 31 - type: integer 
+	Parameter vfp bound to: 511 - type: integer 
+INFO: [Synth 8-3491] module 'VGA_VHDL' declared at 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/vga_vhdl.vhd:17' bound to instance 'VGA_DRIVER' of component 'VGA_VHDL' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/vga_intials_top.vhd:156]
+INFO: [Synth 8-638] synthesizing module 'VGA_VHDL' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/vga_vhdl.vhd:54]
+	Parameter H_SP bound to: 128 - type: integer 
+	Parameter H_BP bound to: 5 - type: integer 
+	Parameter H_FP bound to: 16 - type: integer 
+	Parameter H_Video bound to: 640 - type: integer 
+	Parameter hpixels bound to: 800 - type: integer 
+	Parameter hbp bound to: 144 - type: integer 
+	Parameter hfp bound to: 784 - type: integer 
+	Parameter V_SP bound to: 2 - type: integer 
+	Parameter V_BP bound to: 29 - type: integer 
+	Parameter V_FP bound to: 10 - type: integer 
+	Parameter V_Video bound to: 480 - type: integer 
+	Parameter vlines bound to: 512 - type: integer 
+	Parameter vbp bound to: 31 - type: integer 
+	Parameter vfp bound to: 511 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'VGA_VHDL' (7#1) [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/vga_vhdl.vhd:54]
+	Parameter hbp bound to: 144 - type: integer 
+	Parameter vbp bound to: 31 - type: integer 
+	Parameter W bound to: 114 - type: integer 
+	Parameter H bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'vga_initials' declared at 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/vga_initials.vhd:18' bound to instance 'INIT' of component 'vga_initials' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/vga_intials_top.vhd:176]
+INFO: [Synth 8-638] synthesizing module 'vga_initials' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/vga_initials.vhd:35]
+	Parameter hbp bound to: 144 - type: integer 
+	Parameter vbp bound to: 31 - type: integer 
+	Parameter W bound to: 114 - type: integer 
+	Parameter H bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'vga_initials' (8#1) [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/vga_initials.vhd:35]
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DATA_SIZE bound to: 7 - type: integer 
+	Parameter HEX_SIZE bound to: 114 - type: integer 
+INFO: [Synth 8-3491] module 'PROM_IMG' declared at 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/PROM.vhd:59' bound to instance 'PROM' of component 'PROM_IMG' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/vga_intials_top.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'PROM_IMG' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/PROM.vhd:71]
+	Parameter DEPTH bound to: 5 - type: integer 
+	Parameter DATA_SIZE bound to: 7 - type: integer 
+	Parameter HEX_SIZE bound to: 114 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'PROM_IMG' (9#1) [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/PROM.vhd:71]
+INFO: [Synth 8-256] done synthesizing module 'vga_initials_top' (10#1) [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/vga_intials_top.vhd:60]
+	Parameter g_CLK_PER_BIT bound to: 869 - type: integer 
+	Parameter g_DATA_SIZE bound to: 64 - type: integer 
+	Parameter g_KEY_SIZE bound to: 128 - type: integer 
+INFO: [Synth 8-3491] module 'top_conv' declared at 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top_conv.vhd:36' bound to instance 'GEN_TOP_CONV' of component 'top_conv' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top.vhd:207]
+INFO: [Synth 8-638] synthesizing module 'top_conv' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top_conv.vhd:51]
+	Parameter g_CLK_PER_BIT bound to: 869 - type: integer 
+	Parameter g_DATA_SIZE bound to: 64 - type: integer 
+	Parameter g_KEY_SIZE bound to: 128 - type: integer 
+	Parameter g_CLKS_PER_BIT bound to: 869 - type: integer 
+INFO: [Synth 8-3491] module 'UART_RX' declared at 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/UART_RX.vhd:5' bound to instance 'BYTE_RX' of component 'UART_RX' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top_conv.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'UART_RX' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/UART_RX.vhd:18]
+	Parameter g_CLKS_PER_BIT bound to: 869 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'UART_RX' (11#1) [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/UART_RX.vhd:18]
+INFO: [Synth 8-3491] module 'ascii_hex' declared at 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/ascii_hex.vhd:34' bound to instance 'CONVERT' of component 'ascii_hex' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top_conv.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'ascii_hex' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/ascii_hex.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'ascii_hex' (12#1) [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/ascii_hex.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'top_conv' (13#1) [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top_conv.vhd:51]
+INFO: [Synth 8-3491] module 'TeaDecipher' declared at 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:6' bound to instance 'GEN_DECIPHER' of component 'TeaDecipher' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top.vhd:220]
+INFO: [Synth 8-638] synthesizing module 'TeaDecipher' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:18]
+WARNING: [Synth 8-614] signal 'curr_state' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'max_rounds' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'input_data' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'v0' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't1' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'k2' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'sum' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't4' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'k3' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't2' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't3' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't5' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't6' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'v1' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't7' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'next_v1' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't8' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'k0' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't11' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'k1' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't9' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't10' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't12' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't13' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't14' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'next_v0' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'delta' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'next_sum' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'round' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'next_round' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'num_rounds' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'TeaDecipher' (14#1) [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:18]
+	Parameter strip_hpixels bound to: 800 - type: integer 
+	Parameter strip_vlines bound to: 512 - type: integer 
+	Parameter strip_hbp bound to: 144 - type: integer 
+	Parameter strip_hfp bound to: 784 - type: integer 
+	Parameter strip_vbp bound to: 31 - type: integer 
+	Parameter strip_vfp bound to: 511 - type: integer 
+	Parameter clk_bits bound to: 869 - type: integer 
+	Parameter depth_prom bound to: 5 - type: integer 
+	Parameter data_size_prom bound to: 7 - type: integer 
+	Parameter hex_size_prom bound to: 114 - type: integer 
+INFO: [Synth 8-3491] module 'vga_initials_top' declared at 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/vga_intials_top.vhd:36' bound to instance 'GEN_VGA1' of component 'vga_initials_top' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top.vhd:231]
+INFO: [Synth 8-256] done synthesizing module 'top' (15#1) [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top.vhd:72]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2953.250 ; gain = 297.473
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2973.160 ; gain = 317.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2973.160 ; gain = 317.383
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.199 . Memory (MB): peak = 2985.223 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 2 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_board.xdc] for cell 'GEN_VGA/CLK_GEN_PLL/inst'
+Finished Parsing XDC File [c:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_board.xdc] for cell 'GEN_VGA/CLK_GEN_PLL/inst'
+Parsing XDC File [c:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_board.xdc] for cell 'GEN_VGA1/CLK_GEN_PLL/inst'
+Finished Parsing XDC File [c:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_board.xdc] for cell 'GEN_VGA1/CLK_GEN_PLL/inst'
+Parsing XDC File [c:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc] for cell 'GEN_VGA/CLK_GEN_PLL/inst'
+Finished Parsing XDC File [c:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc] for cell 'GEN_VGA/CLK_GEN_PLL/inst'
+Parsing XDC File [c:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc] for cell 'GEN_VGA1/CLK_GEN_PLL/inst'
+Finished Parsing XDC File [c:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc] for cell 'GEN_VGA1/CLK_GEN_PLL/inst'
+Parsing XDC File [C:/Users/Ahiezer/Downloads/Nexys_A7-100T1.xdc]
+Finished Parsing XDC File [C:/Users/Ahiezer/Downloads/Nexys_A7-100T1.xdc]
+Parsing XDC File [c:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_late.xdc] for cell 'GEN_VGA/CLK_GEN_PLL/inst'
+Finished Parsing XDC File [c:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_late.xdc] for cell 'GEN_VGA/CLK_GEN_PLL/inst'
+Parsing XDC File [c:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_late.xdc] for cell 'GEN_VGA1/CLK_GEN_PLL/inst'
+Finished Parsing XDC File [c:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_late.xdc] for cell 'GEN_VGA1/CLK_GEN_PLL/inst'
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3086.117 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:47 ; elapsed = 00:00:31 . Memory (MB): peak = 3107.453 ; gain = 451.676
+50 Infos, 69 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:00 ; elapsed = 00:00:44 . Memory (MB): peak = 3107.453 ; gain = 722.680
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri May 14 15:49:13 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/synth_1/runme.log
+[Fri May 14 15:49:13 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri May 14 15:53:18 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/synth_1/runme.log
+[Fri May 14 15:53:18 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 06 2019-21:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 3107.453 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AE2358A
+set_property PROGRAM.FILE {C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292AE2358A
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri May 14 16:06:04 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/synth_1/runme.log
+[Fri May 14 16:06:04 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/synth_1
+
+close_hw_manager
+close_hw_manager: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 3189.398 ; gain = 78.012
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri May 14 16:07:12 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/synth_1/runme.log
+[Fri May 14 16:07:12 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri May 14 16:12:54 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/synth_1/runme.log
+[Fri May 14 16:12:54 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 06 2019-21:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 3195.305 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AE2358A
+set_property PROGRAM.FILE {C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3209.742 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May 14 16:25:52 2021...
