@@ -127,3 +127,4 @@ set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
 set_property PROGRAM.FILE {C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
 program_hw_devices [get_hw_devices xc7a100t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_sim
