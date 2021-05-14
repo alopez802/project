@@ -15,11 +15,11 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 23192 
+INFO: Helper process launched with PID 27568 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 863.332 ; gain = 234.195
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 863.602 ; gain = 234.750
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top.vhd:73]
 	Parameter top_strip_hpixels bound to: 800 - type: integer 
 	Parameter top_strip_vlines bound to: 512 - type: integer 
 	Parameter top_strip_hbp bound to: 144 - type: integer 
@@ -34,7 +34,7 @@ INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/Ahiezer/Documents/GitHub
 	Parameter top_data_size bound to: 7 - type: integer 
 	Parameter top_hex_size bound to: 114 - type: integer 
 	Parameter top_rounds bound to: 2 - type: integer 
-INFO: [Synth 8-3491] module 'Seven_Seg' declared at 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:36' bound to instance 'GEN_SS' of component 'Seven_Seg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top.vhd:144]
+INFO: [Synth 8-3491] module 'Seven_Seg' declared at 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:36' bound to instance 'GEN_SS' of component 'Seven_Seg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top.vhd:161]
 INFO: [Synth 8-638] synthesizing module 'Seven_Seg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:46]
 INFO: [Synth 8-226] default block is never used [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:104]
 WARNING: [Synth 8-614] signal 'char_7' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:102]
@@ -46,7 +46,7 @@ WARNING: [Synth 8-614] signal 'char_2' is read in the process but is not in the 
 WARNING: [Synth 8-614] signal 'char_1' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:102]
 INFO: [Synth 8-256] done synthesizing module 'Seven_Seg' (1#1) [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/Seven_Seg.vhd:46]
 	Parameter num_rounds bound to: 2 - type: integer 
-INFO: [Synth 8-3491] module 'TeaEncipher' declared at 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:25' bound to instance 'GEN_TEA' of component 'TeaEncipher' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top.vhd:154]
+INFO: [Synth 8-3491] module 'TeaEncipher' declared at 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:25' bound to instance 'GEN_TEA' of component 'TeaEncipher' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top.vhd:171]
 INFO: [Synth 8-638] synthesizing module 'TeaEncipher' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:37]
 	Parameter num_rounds bound to: 2 - type: integer 
 WARNING: [Synth 8-614] signal 'curr_state' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
@@ -80,6 +80,8 @@ WARNING: [Synth 8-614] signal 'round' is read in the process but is not in the s
 WARNING: [Synth 8-614] signal 'next_round' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
 WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:68]
 INFO: [Synth 8-256] done synthesizing module 'TeaEncipher' (2#1) [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/TEA.vhd:37]
+WARNING: [Synth 8-614] signal 'top_output_data' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top.vhd:183]
+WARNING: [Synth 8-614] signal 'top_output_decipher' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top.vhd:183]
 	Parameter strip_hpixels bound to: 800 - type: integer 
 	Parameter strip_vlines bound to: 512 - type: integer 
 	Parameter strip_hbp bound to: 144 - type: integer 
@@ -90,7 +92,7 @@ INFO: [Synth 8-256] done synthesizing module 'TeaEncipher' (2#1) [C:/Users/Ahiez
 	Parameter depth_prom bound to: 5 - type: integer 
 	Parameter data_size_prom bound to: 7 - type: integer 
 	Parameter hex_size_prom bound to: 114 - type: integer 
-INFO: [Synth 8-3491] module 'vga_initials_top' declared at 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/vga_intials_top.vhd:36' bound to instance 'GEN_VGA' of component 'vga_initials_top' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top.vhd:167]
+INFO: [Synth 8-3491] module 'vga_initials_top' declared at 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/vga_intials_top.vhd:36' bound to instance 'GEN_VGA' of component 'vga_initials_top' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top.vhd:193]
 INFO: [Synth 8-638] synthesizing module 'vga_initials_top' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/vga_intials_top.vhd:60]
 	Parameter strip_hpixels bound to: 800 - type: integer 
 	Parameter strip_vlines bound to: 512 - type: integer 
@@ -189,7 +191,7 @@ INFO: [Synth 8-256] done synthesizing module 'vga_initials_top' (10#1) [C:/Users
 	Parameter g_CLK_PER_BIT bound to: 869 - type: integer 
 	Parameter g_DATA_SIZE bound to: 64 - type: integer 
 	Parameter g_KEY_SIZE bound to: 128 - type: integer 
-INFO: [Synth 8-3491] module 'top_conv' declared at 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top_conv.vhd:36' bound to instance 'GEN_TOP_CONV' of component 'top_conv' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top.vhd:192]
+INFO: [Synth 8-3491] module 'top_conv' declared at 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top_conv.vhd:36' bound to instance 'GEN_TOP_CONV' of component 'top_conv' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top.vhd:218]
 INFO: [Synth 8-638] synthesizing module 'top_conv' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top_conv.vhd:51]
 	Parameter g_CLK_PER_BIT bound to: 869 - type: integer 
 	Parameter g_DATA_SIZE bound to: 64 - type: integer 
@@ -203,9 +205,44 @@ INFO: [Synth 8-3491] module 'ascii_hex' declared at 'C:/Users/Ahiezer/Documents/
 INFO: [Synth 8-638] synthesizing module 'ascii_hex' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/ascii_hex.vhd:43]
 INFO: [Synth 8-256] done synthesizing module 'ascii_hex' (12#1) [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/ascii_hex.vhd:43]
 INFO: [Synth 8-256] done synthesizing module 'top_conv' (13#1) [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top_conv.vhd:51]
-INFO: [Synth 8-256] done synthesizing module 'top' (14#1) [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top.vhd:72]
+INFO: [Synth 8-3491] module 'TeaDecipher' declared at 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:6' bound to instance 'GEN_DECIPHER' of component 'TeaDecipher' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top.vhd:231]
+INFO: [Synth 8-638] synthesizing module 'TeaDecipher' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:18]
+WARNING: [Synth 8-614] signal 'curr_state' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'max_rounds' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'input_data' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'v0' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't1' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'k2' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'sum' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't4' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'k3' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't2' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't3' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't5' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't6' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'v1' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't7' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'next_v1' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't8' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'k0' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't11' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'k1' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't9' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't10' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't12' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't13' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 't14' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'next_v0' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'delta' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'next_sum' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'round' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'next_round' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'num_rounds' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'TeaDecipher' (14#1) [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'top' (15#1) [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/top.vhd:73]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 938.344 ; gain = 309.207
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 938.305 ; gain = 309.453
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -218,12 +255,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 938.344 ; gain = 309.207
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 938.305 ; gain = 309.453
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 938.344 ; gain = 309.207
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 938.305 ; gain = 309.453
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 938.344 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.096 . Memory (MB): peak = 938.305 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -247,20 +284,20 @@ Parsing XDC File [c:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_
 Finished Parsing XDC File [c:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0_late.xdc] for cell 'GEN_VGA/CLK_GEN_PLL/inst'
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1050.867 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1054.902 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1050.867 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1054.902 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1050.867 ; gain = 421.730
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1054.902 ; gain = 426.051
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1050.867 ; gain = 421.730
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1054.902 ; gain = 426.051
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -268,7 +305,7 @@ Start Applying 'set_property' XDC Constraints
 Applied set_property DONT_TOUCH = true for GEN_VGA/CLK_GEN_PLL/inst. (constraint file  C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/synth_1/dont_touch.xdc, line 10).
 Applied set_property DONT_TOUCH = true for GEN_VGA/CLK_GEN_PLL. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1050.867 ; gain = 421.730
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1054.902 ; gain = 426.051
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'TeaEncipher'
 INFO: [Synth 8-5546] ROM "output_data" won't be mapped to RAM because it is too sparse
@@ -363,8 +400,32 @@ WARNING: [Synth 8-327] inferring latch for variable 'next_sum_reg' [C:/Users/Ahi
                    s_key |                              100 |                               01
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'top_conv'
+WARNING: [Synth 8-327] inferring latch for variable 'output_data_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:158]
+WARNING: [Synth 8-327] inferring latch for variable 'done_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:58]
+WARNING: [Synth 8-327] inferring latch for variable 'v1_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'v0_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:78]
+WARNING: [Synth 8-327] inferring latch for variable 'round_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:61]
+WARNING: [Synth 8-327] inferring latch for variable 'next_v1_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:80]
+WARNING: [Synth 8-327] inferring latch for variable 'next_v0_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:79]
+WARNING: [Synth 8-327] inferring latch for variable 'next_round_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:62]
+WARNING: [Synth 8-327] inferring latch for variable 't7_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:69]
+WARNING: [Synth 8-327] inferring latch for variable 't14_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:76]
+WARNING: [Synth 8-327] inferring latch for variable 't6_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:68]
+WARNING: [Synth 8-327] inferring latch for variable 't5_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 't13_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:75]
+WARNING: [Synth 8-327] inferring latch for variable 't12_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:74]
+WARNING: [Synth 8-327] inferring latch for variable 't3_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:65]
+WARNING: [Synth 8-327] inferring latch for variable 't2_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 't4_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:66]
+WARNING: [Synth 8-327] inferring latch for variable 't10_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:72]
+WARNING: [Synth 8-327] inferring latch for variable 't9_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:71]
+WARNING: [Synth 8-327] inferring latch for variable 't11_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:73]
+WARNING: [Synth 8-327] inferring latch for variable 'sum_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:59]
+WARNING: [Synth 8-327] inferring latch for variable 't1_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:63]
+WARNING: [Synth 8-327] inferring latch for variable 't8_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:70]
+WARNING: [Synth 8-327] inferring latch for variable 'next_sum_reg' [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:60]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1050.867 ; gain = 421.730
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1054.902 ; gain = 426.051
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -377,30 +438,35 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 9     
+	   2 Input     32 Bit       Adders := 16    
+	   3 Input     32 Bit       Adders := 2     
 	   2 Input     31 Bit       Adders := 1     
 	   3 Input     12 Bit       Adders := 2     
 	   3 Input     11 Bit       Adders := 1     
 	   2 Input     10 Bit       Adders := 8     
-	   2 Input      8 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
 	   2 Input      3 Bit       Adders := 1     
 +---XORs : 
-	   2 Input     32 Bit         XORs := 4     
+	   2 Input     32 Bit         XORs := 8     
 +---Registers : 
 	              128 Bit    Registers := 1     
 	               64 Bit    Registers := 1     
 	               31 Bit    Registers := 1     
 	               10 Bit    Registers := 3     
 	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
 	                3 Bit    Registers := 3     
 	                1 Bit    Registers := 10    
++---Multipliers : 
+	                 8x32  Multipliers := 1     
 +---Muxes : 
 	   2 Input    128 Bit        Muxes := 2     
 	   3 Input    128 Bit        Muxes := 1     
 	   6 Input    112 Bit        Muxes := 1     
-	   2 Input     64 Bit        Muxes := 2     
+	   2 Input     64 Bit        Muxes := 3     
 	   3 Input     64 Bit        Muxes := 1     
 	  25 Input     32 Bit        Muxes := 20    
+	  26 Input     32 Bit        Muxes := 17    
 	   2 Input     31 Bit        Muxes := 3     
 	  25 Input     25 Bit        Muxes := 1     
 	   2 Input     25 Bit        Muxes := 2     
@@ -409,10 +475,12 @@ Detailed RTL Component Info :
 	  25 Input      8 Bit        Muxes := 2     
 	   6 Input      8 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 1     
+	  26 Input      8 Bit        Muxes := 2     
 	   8 Input      7 Bit        Muxes := 2     
 	   2 Input      7 Bit        Muxes := 1     
 	  16 Input      7 Bit        Muxes := 16    
 	   8 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
 	   6 Input      4 Bit        Muxes := 2     
 	   2 Input      4 Bit        Muxes := 2     
 	  11 Input      4 Bit        Muxes := 1     
@@ -425,6 +493,7 @@ Detailed RTL Component Info :
 	   2 Input      1 Bit        Muxes := 1     
 	   5 Input      1 Bit        Muxes := 1     
 	   3 Input      1 Bit        Muxes := 4     
+	  26 Input      1 Bit        Muxes := 24    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -432,6 +501,10 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
 Module Seven_Seg 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -520,6 +593,23 @@ Detailed RTL Component Info :
 	   3 Input      3 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 5     
 	   3 Input      1 Bit        Muxes := 4     
+Module TeaDecipher 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 7     
+	   2 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 4     
++---Registers : 
+	                5 Bit    Registers := 1     
++---Multipliers : 
+	                 8x32  Multipliers := 1     
++---Muxes : 
+	  26 Input     32 Bit        Muxes := 17    
+	  26 Input      8 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+	  26 Input      1 Bit        Muxes := 24    
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -536,135 +626,103 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.srcs/sources_1/new/tea_decipher.vhd:40]
+DSP Report: Generating DSP max_rounds, operation Mode is: (A:0x179b9)*B.
+DSP Report: operator max_rounds is absorbed into DSP max_rounds.
+DSP Report: operator max_rounds is absorbed into DSP max_rounds.
+DSP Report: Generating DSP max_rounds, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator max_rounds is absorbed into DSP max_rounds.
+DSP Report: operator max_rounds is absorbed into DSP max_rounds.
+INFO: [Synth 8-3886] merging instance 'GEN_DECIPHER/t1_reg[0]' (LD) to 'GEN_DECIPHER/t1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'GEN_DECIPHER/t1_reg[1]' (LD) to 'GEN_DECIPHER/t1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'GEN_DECIPHER/t1_reg[2]' (LD) to 'GEN_DECIPHER/t1_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (GEN_DECIPHER/\t1_reg[3] )
+INFO: [Synth 8-3886] merging instance 'GEN_TEA/t8_reg[0]' (LD) to 'GEN_TEA/t8_reg[3]'
+INFO: [Synth 8-3886] merging instance 'GEN_TEA/t8_reg[1]' (LD) to 'GEN_TEA/t8_reg[3]'
+INFO: [Synth 8-3886] merging instance 'GEN_TEA/t8_reg[2]' (LD) to 'GEN_TEA/t8_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (GEN_TEA/\t8_reg[3] )
+INFO: [Synth 8-3886] merging instance 'GEN_DECIPHER/t8_reg[0]' (LD) to 'GEN_DECIPHER/t8_reg[3]'
+INFO: [Synth 8-3886] merging instance 'GEN_DECIPHER/t8_reg[1]' (LD) to 'GEN_DECIPHER/t8_reg[3]'
+INFO: [Synth 8-3886] merging instance 'GEN_DECIPHER/t8_reg[2]' (LD) to 'GEN_DECIPHER/t8_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (GEN_DECIPHER/\t8_reg[3] )
+INFO: [Synth 8-3886] merging instance 'GEN_TEA/t1_reg[0]' (LD) to 'GEN_TEA/t1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'GEN_TEA/t1_reg[1]' (LD) to 'GEN_TEA/t1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'GEN_TEA/t1_reg[2]' (LD) to 'GEN_TEA/t1_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (GEN_TEA/\t1_reg[3] )
+INFO: [Synth 8-3886] merging instance 'GEN_DECIPHER/t4_reg[27]' (LD) to 'GEN_DECIPHER/t4_reg[31]'
+INFO: [Synth 8-3886] merging instance 'GEN_DECIPHER/t4_reg[28]' (LD) to 'GEN_DECIPHER/t4_reg[31]'
+INFO: [Synth 8-3886] merging instance 'GEN_DECIPHER/t4_reg[29]' (LD) to 'GEN_DECIPHER/t4_reg[31]'
+INFO: [Synth 8-3886] merging instance 'GEN_DECIPHER/t4_reg[30]' (LD) to 'GEN_DECIPHER/t4_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (GEN_DECIPHER/\t4_reg[31] )
+INFO: [Synth 8-3886] merging instance 'GEN_TEA/t11_reg[27]' (LD) to 'GEN_TEA/t11_reg[31]'
+INFO: [Synth 8-3886] merging instance 'GEN_TEA/t11_reg[28]' (LD) to 'GEN_TEA/t11_reg[31]'
+INFO: [Synth 8-3886] merging instance 'GEN_TEA/t11_reg[29]' (LD) to 'GEN_TEA/t11_reg[31]'
+INFO: [Synth 8-3886] merging instance 'GEN_TEA/t11_reg[30]' (LD) to 'GEN_TEA/t11_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (GEN_TEA/\t11_reg[31] )
+INFO: [Synth 8-3886] merging instance 'GEN_DECIPHER/t11_reg[27]' (LD) to 'GEN_DECIPHER/t11_reg[31]'
+INFO: [Synth 8-3886] merging instance 'GEN_DECIPHER/t11_reg[28]' (LD) to 'GEN_DECIPHER/t11_reg[31]'
+INFO: [Synth 8-3886] merging instance 'GEN_DECIPHER/t11_reg[29]' (LD) to 'GEN_DECIPHER/t11_reg[31]'
+INFO: [Synth 8-3886] merging instance 'GEN_DECIPHER/t11_reg[30]' (LD) to 'GEN_DECIPHER/t11_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (GEN_DECIPHER/\t11_reg[31] )
+INFO: [Synth 8-3886] merging instance 'GEN_TEA/t4_reg[27]' (LD) to 'GEN_TEA/t4_reg[31]'
+INFO: [Synth 8-3886] merging instance 'GEN_TEA/t4_reg[28]' (LD) to 'GEN_TEA/t4_reg[31]'
+INFO: [Synth 8-3886] merging instance 'GEN_TEA/t4_reg[29]' (LD) to 'GEN_TEA/t4_reg[31]'
+INFO: [Synth 8-3886] merging instance 'GEN_TEA/t4_reg[30]' (LD) to 'GEN_TEA/t4_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (GEN_TEA/\t4_reg[31] )
 INFO: [Synth 8-3886] merging instance 'GEN_VGA/INIT/red_reg[0]' (FDCE) to 'GEN_VGA/INIT/red_reg[1]'
 INFO: [Synth 8-3886] merging instance 'GEN_VGA/INIT/red_reg[1]' (FDCE) to 'GEN_VGA/INIT/red_reg[2]'
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[63]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[62]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[61]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[60]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[59]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[58]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[57]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[56]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[55]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[54]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[53]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[52]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[51]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[50]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[49]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[48]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[47]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[46]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[45]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[44]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[43]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[42]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[41]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[40]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[39]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[38]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[37]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[36]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[35]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[34]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[33]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[32]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[31]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[30]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[29]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[28]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[27]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[26]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[25]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[24]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[23]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[22]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[21]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[20]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[19]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[18]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[17]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[16]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[15]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[14]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[13]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[12]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[11]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[10]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[9]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[8]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[7]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[6]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[5]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[4]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[3]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[2]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[1]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/output_data_reg[0]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[24]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[23]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[22]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[21]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[20]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[19]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[18]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[17]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[16]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[15]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[14]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[13]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[12]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[11]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[10]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[9]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[8]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[7]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[6]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[5]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[4]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[3]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[2]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[1]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/FSM_onehot_curr_state_reg[0]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/done_reg) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/v1_reg[31]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/v1_reg[30]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/v1_reg[29]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/v1_reg[28]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/v1_reg[27]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/v1_reg[26]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/v1_reg[25]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/v1_reg[24]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/v1_reg[23]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (GEN_TEA/v1_reg[22]) is unused and will be removed from module top.
-INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[23]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[30]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[25]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[30]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[18]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[30]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[17]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[30]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[13]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[30]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[28]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[30]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[7]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[30]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[20]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[30]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[24]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[30]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[11]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[30]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[26]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[30]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[8]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[30]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[22]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[30]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[19]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[30]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[27]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[30]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[16]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[30]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[12]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[30]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[9]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[30]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[30]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[29]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[29]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[21]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[15]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[21]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[14]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[21]'
-INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[21]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[10]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\GEN_TOP_CONV/state_index_reg[10] )
+WARNING: [Synth 8-3332] Sequential element (done_reg) is unused and will be removed from module TeaEncipher.
+WARNING: [Synth 8-3332] Sequential element (t11_reg[31]) is unused and will be removed from module TeaEncipher.
+WARNING: [Synth 8-3332] Sequential element (t8_reg[3]) is unused and will be removed from module TeaEncipher.
+WARNING: [Synth 8-3332] Sequential element (t4_reg[31]) is unused and will be removed from module TeaEncipher.
+WARNING: [Synth 8-3332] Sequential element (t1_reg[3]) is unused and will be removed from module TeaEncipher.
+WARNING: [Synth 8-3332] Sequential element (done_reg) is unused and will be removed from module TeaDecipher.
+WARNING: [Synth 8-3332] Sequential element (t4_reg[31]) is unused and will be removed from module TeaDecipher.
+WARNING: [Synth 8-3332] Sequential element (t11_reg[31]) is unused and will be removed from module TeaDecipher.
+WARNING: [Synth 8-3332] Sequential element (t1_reg[3]) is unused and will be removed from module TeaDecipher.
+WARNING: [Synth 8-3332] Sequential element (t8_reg[3]) is unused and will be removed from module TeaDecipher.
+INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[14]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[7]'
+INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[11]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[7]'
+INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[9]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[7]'
+INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[8]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[7]'
+INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[13]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[7]'
+INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[12]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[7]'
+INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[10]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[7]'
+INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[7]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[15]'
+INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[30]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[15]'
+INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[29]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[15]'
+INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[28]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[15]'
+INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[27]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[15]'
+INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[26]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[15]'
+INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[25]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[15]'
+INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[24]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[15]'
+INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[23]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[15]'
+INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[22]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[15]'
+INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[21]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[15]'
+INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[20]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[15]'
+INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[19]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[15]'
+INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[18]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[15]'
+INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[17]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[15]'
+INFO: [Synth 8-3886] merging instance 'GEN_TOP_CONV/state_index_reg[16]' (FDRE) to 'GEN_TOP_CONV/state_index_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (GEN_TOP_CONV/\state_index_reg[15] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1050.867 ; gain = 421.730
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 1054.902 ; gain = 426.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping	Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|TeaDecipher | (A:0x179b9)*B  | 18     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|TeaDecipher | (PCIN>>17)+A*B | 16     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -676,13 +734,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1050.867 ; gain = 421.730
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 1065.992 ; gain = 437.141
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1050.867 ; gain = 421.730
+Finished Timing Optimization : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 1090.883 ; gain = 462.031
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -694,7 +752,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1050.867 ; gain = 421.730
+Finished Technology Mapping : Time (s): cpu = 00:01:10 ; elapsed = 00:01:14 . Memory (MB): peak = 1117.488 ; gain = 488.637
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -718,13 +776,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1050.867 ; gain = 421.730
+Finished IO Insertion : Time (s): cpu = 00:01:19 ; elapsed = 00:01:23 . Memory (MB): peak = 1124.137 ; gain = 495.285
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1050.867 ; gain = 421.730
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:20 ; elapsed = 00:01:23 . Memory (MB): peak = 1124.137 ; gain = 495.285
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -743,25 +801,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1050.867 ; gain = 421.730
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:20 ; elapsed = 00:01:24 . Memory (MB): peak = 1124.137 ; gain = 495.285
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1050.867 ; gain = 421.730
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:20 ; elapsed = 00:01:24 . Memory (MB): peak = 1124.137 ; gain = 495.285
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1050.867 ; gain = 421.730
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:20 ; elapsed = 00:01:24 . Memory (MB): peak = 1124.137 ; gain = 495.285
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1050.867 ; gain = 421.730
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:20 ; elapsed = 00:01:24 . Memory (MB): peak = 1124.137 ; gain = 495.285
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -777,62 +835,66 @@ Report Cell Usage:
 +------+----------+------+
 |      |Cell      |Count |
 +------+----------+------+
-|1     |BUFG      |     4|
-|2     |CARRY4    |    19|
-|3     |LUT1      |    12|
-|4     |LUT2      |    25|
-|5     |LUT3      |    33|
-|6     |LUT4      |    50|
-|7     |LUT5      |    30|
-|8     |LUT6      |   320|
-|9     |MUXF7     |    18|
-|10    |MUXF8     |     5|
+|1     |BUFG      |    15|
+|2     |CARRY4    |   159|
+|3     |DSP48E1   |     2|
+|4     |LUT1      |    43|
+|5     |LUT2      |  1348|
+|6     |LUT3      |   475|
+|7     |LUT4      |   117|
+|8     |LUT5      |    67|
+|9     |LUT6      |   463|
+|10    |MUXF7     |    27|
 |11    |PLLE2_ADV |     1|
 |12    |FDCE      |    25|
 |13    |FDPE      |     1|
-|14    |FDRE      |   128|
-|15    |FDSE      |     1|
-|16    |IBUF      |    14|
-|17    |OBUF      |    27|
+|14    |FDRE      |   286|
+|15    |FDSE      |     2|
+|16    |LD        |  1404|
+|17    |IBUF      |    15|
+|18    |OBUF      |    27|
 +------+----------+------+
 
 Report Instance Areas: 
 +------+----------------+------------------+------+
 |      |Instance        |Module            |Cells |
 +------+----------------+------------------+------+
-|1     |top             |                  |   713|
-|2     |  GEN_SS        |Seven_Seg         |    38|
-|3     |  GEN_TOP_CONV  |top_conv          |   395|
-|4     |    BYTE_RX     |UART_RX           |    72|
-|5     |  GEN_VGA       |vga_initials_top  |   238|
-|6     |    CLK_GEN_PLL |clk_wiz_0         |     4|
-|7     |      inst      |clk_wiz_0_clk_wiz |     4|
-|8     |    INIT        |vga_initials      |    35|
-|9     |    VGA_DRIVER  |VGA_VHDL          |   199|
+|1     |top             |                  |  4477|
+|2     |  GEN_TEA       |TeaEncipher       |  1718|
+|3     |  GEN_DECIPHER  |TeaDecipher       |  1855|
+|4     |  GEN_SS        |Seven_Seg         |    38|
+|5     |  GEN_TOP_CONV  |top_conv          |   577|
+|6     |    BYTE_RX     |UART_RX           |    74|
+|7     |  GEN_VGA       |vga_initials_top  |   235|
+|8     |    CLK_GEN_PLL |clk_wiz_0         |     4|
+|9     |      inst      |clk_wiz_0_clk_wiz |     4|
+|10    |    INIT        |vga_initials      |    32|
+|11    |    VGA_DRIVER  |VGA_VHDL          |   199|
 +------+----------------+------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1050.867 ; gain = 421.730
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:20 ; elapsed = 00:01:24 . Memory (MB): peak = 1124.137 ; gain = 495.285
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 770 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 1050.867 ; gain = 309.207
-Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1050.867 ; gain = 421.730
+Synthesis finished with 0 errors, 0 critical warnings and 58 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:04 ; elapsed = 00:01:19 . Memory (MB): peak = 1124.137 ; gain = 378.688
+Synthesis Optimization Complete : Time (s): cpu = 00:01:21 ; elapsed = 00:01:25 . Memory (MB): peak = 1124.137 ; gain = 495.285
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1050.867 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 43 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 1132.176 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1593 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1056.125 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1132.211 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 1404 instances were transformed.
+  LD => LDCE: 1404 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-115 Infos, 161 Warnings, 0 Critical Warnings and 0 Errors encountered.
+154 Infos, 129 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1056.125 ; gain = 716.094
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1056.125 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:33 ; elapsed = 00:01:38 . Memory (MB): peak = 1132.211 ; gain = 793.227
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1132.211 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Ahiezer/Documents/GitHub/project/Class_Project/Class_Project.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu May 13 15:34:55 2021...
+INFO: [Common 17-206] Exiting Vivado at Fri May 14 16:14:49 2021...

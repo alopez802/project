@@ -56,7 +56,8 @@ Port (
         top_vga_rst     : in  STD_LOGIC; -- vga reset  
         top_serial_rx   : in std_logic; -- top uart input
         top_vga_sw      : in std_logic_vector(7 downto 0); -- switches used to change color of text
-        top_d_e_SS      : in std_logic; -- will show decrypt on SS if high
+        top_deci_enc_SS      : in std_logic; -- will show decrypt on SS if high
+        top_deci_enc    : in std_logic; -- will display the encrypted or decrypted text on vga monitor
         top_hsync       : out std_logic; -- top output hsync for vga
         top_vsync       : out std_logic; -- top output vsync for vga
         top_red         : out std_logic_VECTOR(2 downto 0); -- top output red for text
@@ -70,6 +71,18 @@ Port (
 end top;
 
 architecture Behavioral of top is
+
+component TeaDecipher is
+    Port (
+        clk         : in  STD_LOGIC;
+        rst         : in  STD_LOGIC;
+        num_rounds  : in  UNSIGNED(7 downto 0);
+        input_data  : in  UNSIGNED(63 downto 0);
+        key         : in  UNSIGNED(127 downto 0);
+        output_data : out UNSIGNED(63 downto 0);
+        done        : out STD_LOGIC
+    );
+end component;
 
 component top_conv is
 generic(g_CLK_PER_BIT :integer:= 869;
@@ -135,7 +148,11 @@ end component;
 signal top_output_data : unsigned(63 downto 0);
 signal top_rx_data     : std_logic_vector(7 downto 0);
 signal top_input_data :unsigned(63 downto 0);
+signal top_output_decipher :unsigned(63 downto 0);
 signal top_key:unsigned(127 downto 0);
+signal num_rounds_top: unsigned(7 downto 0):=x"02";
+
+signal temp_deci_enc :unsigned(63 downto 0);
 
 begin
 
@@ -145,7 +162,7 @@ GEN_SS: Seven_Seg
         port map(
             clk       => top_clk, -- top clock for SS 
             rst       => top_SS_rst, -- top reset for SS 
-            SSD_in_0  => top_d_e_SS, 
+            SSD_in_0  => top_deci_enc_SS, 
             EN_out    => top_En, -- top En for SS
             DP        => top_DP, -- top DP for SS
             SS        => top_SS  -- top SS for SS
@@ -155,14 +172,23 @@ GEN_TEA: TeaEncipher
     generic map(num_rounds  => top_rounds)
     Port map (
         clk        => top_clk, -- top input for tea enc
-        rst        => top_rst, -- top key for tea enc
-        input_data => top_input_data,
-        key        => top_key,
+        rst        => top_vga_rst, -- top key for tea enc
+        input_data => unsigned(top_input_data),
+        key        => unsigned(top_key),
         output_data=> top_output_data,
         done       => open
         
     );
 
+GEN_DECI_ENC: process(top_deci_enc)
+              begin
+              if(top_deci_enc = '0') then
+                temp_deci_enc <= top_output_data;
+              else
+                temp_deci_enc <= top_output_decipher;
+
+              end if;
+              end process;
 
 GEN_VGA: vga_initials_top
           generic map (
@@ -180,7 +206,7 @@ GEN_VGA: vga_initials_top
     Port map( 
            clk   => top_clk, -- top clk for vga
            rst   => top_vga_rst, -- top vga reset
-           enciphered_data  => top_input_data,
+           enciphered_data  => unsigned(temp_deci_enc),
            vga_sw           => top_vga_sw,
            hsync => top_hsync, -- top output for hsync
            vsync => top_vsync, -- top output for vsync
@@ -201,6 +227,18 @@ generic map(g_CLK_PER_BIT => top_clk_bits,
             o_data    => top_input_data,      
             o_key       => top_key
             );
+            
+GEN_DECIPHER: TeaDecipher
+    Port map (
+        clk         => top_clk,
+        rst         => top_vga_rst,
+        num_rounds  => num_rounds_top,
+        input_data  => unsigned(top_output_data),
+        key         => unsigned(top_key),
+        output_data => top_output_decipher,
+        done        => open
+    ); 
+         
 
 end Behavioral;
 

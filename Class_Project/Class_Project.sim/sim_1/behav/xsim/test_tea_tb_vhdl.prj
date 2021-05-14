@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Class_Project.srcs/sources_1/new/PROM.vhd" \
+"../../../../Class_Project.srcs/sources_1/new/TEA.vhd" \
+"../../../../Class_Project.srcs/sources_1/new/test_tea.vhd" \
+"../../../../Class_Project.srcs/sources_1/new/vga_initials.vhd" \
+"../../../../Class_Project.srcs/sources_1/new/vga_intials_top.vhd" \
+"../../../../Class_Project.srcs/sources_1/new/vga_vhdl.vhd" \
+"../../../../Class_Project.srcs/sim_1/new/test_tea_tb.vhd" \
+
+# Do not sort compile order
+nosort

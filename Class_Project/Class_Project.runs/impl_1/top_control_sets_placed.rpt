@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Thu May 13 15:35:33 2021
+| Date         : Fri May 14 16:16:27 2021
 | Host         : LAPTOP-E46NNAVE running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    10 |
-|    Minimum number of control sets                        |    10 |
+| Total control sets                                       |    57 |
+|    Minimum number of control sets                        |    57 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    45 |
+| Unused register locations in slices containing registers |    82 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,15 +39,15 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    10 |
+| Total control sets |    57 |
 | >= 0 to < 4        |     1 |
 | >= 4 to < 6        |     0 |
 | >= 6 to < 8        |     1 |
-| >= 8 to < 10       |     2 |
+| >= 8 to < 10       |     6 |
 | >= 10 to < 12      |     2 |
 | >= 12 to < 14      |     0 |
 | >= 14 to < 16      |     1 |
-| >= 16              |     3 |
+| >= 16              |    46 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,31 +58,78 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              19 |            7 |
-| No           | No                    | Yes                    |              15 |            7 |
-| No           | Yes                   | No                     |              86 |           36 |
+| No           | No                    | No                     |            1423 |          482 |
+| No           | No                    | Yes                    |              15 |            6 |
+| No           | Yes                   | No                     |             245 |           84 |
 | Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |              19 |            7 |
-| Yes          | Yes                   | No                     |              24 |           11 |
+| Yes          | No                    | Yes                    |              19 |            6 |
+| Yes          | Yes                   | No                     |              24 |           10 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+--------------------------------------+---------------------------------------------+---------------------------------------------+------------------+----------------+
-|             Clock Signal             |                Enable Signal                |               Set/Reset Signal              | Slice Load Count | Bel Load Count |
-+--------------------------------------+---------------------------------------------+---------------------------------------------+------------------+----------------+
-|  GEN_VGA/VGA_DRIVER/clkout1_buf_BUFG |                                             |                                             |                1 |              1 |
-|  top_clk_IBUF_BUFG                   | GEN_TOP_CONV/state_index                    | top_rst_IBUF                                |                4 |              6 |
-|  top_clk_IBUF_BUFG                   | GEN_TOP_CONV/BYTE_RX/E[0]                   | top_rst_IBUF                                |                3 |              8 |
-|  GEN_VGA/VGA_DRIVER/clkout1_buf_BUFG | GEN_VGA/INIT/R1                             | top_vga_rst_IBUF                            |                3 |              9 |
-|  GEN_VGA/VGA_DRIVER/clkout1_buf_BUFG | GEN_VGA/VGA_DRIVER/vsenable                 | top_vga_rst_IBUF                            |                4 |             10 |
-|  top_clk_IBUF_BUFG                   | GEN_TOP_CONV/BYTE_RX/r_Clk_Count[9]_i_2_n_0 | GEN_TOP_CONV/BYTE_RX/r_Clk_Count[9]_i_1_n_0 |                4 |             10 |
-|  GEN_VGA/VGA_DRIVER/clkout1_buf_BUFG |                                             | top_vga_rst_IBUF                            |                7 |             15 |
-|  top_clk_IBUF_BUFG                   |                                             |                                             |                6 |             18 |
-|  top_clk_IBUF_BUFG                   |                                             | top_SS_rst_IBUF                             |                5 |             19 |
-|  top_clk_IBUF_BUFG                   |                                             | top_rst_IBUF                                |               31 |             67 |
-+--------------------------------------+---------------------------------------------+---------------------------------------------+------------------+----------------+
++--------------------------------------------+---------------------------------------------+---------------------------------------------+------------------+----------------+
+|                Clock Signal                |                Enable Signal                |               Set/Reset Signal              | Slice Load Count | Bel Load Count |
++--------------------------------------------+---------------------------------------------+---------------------------------------------+------------------+----------------+
+|  GEN_VGA/VGA_DRIVER/clkout1_buf            |                                             |                                             |                1 |              1 |
+|  top_clk_IBUF_BUFG                         | GEN_TOP_CONV/state_index                    | top_rst_IBUF                                |                3 |              6 |
+|  GEN_TEA/next_round__0                     |                                             |                                             |                3 |              8 |
+|  GEN_DECIPHER/next_round_reg[7]_i_2__0_n_1 |                                             |                                             |                3 |              8 |
+|  GEN_DECIPHER/round_reg[7]_i_2__0_n_1      |                                             |                                             |                2 |              8 |
+|  GEN_TEA/round                             |                                             |                                             |                3 |              8 |
+|  top_clk_IBUF_BUFG                         | GEN_TOP_CONV/BYTE_RX/E[0]                   | top_rst_IBUF                                |                3 |              8 |
+|  GEN_VGA/VGA_DRIVER/clkout1_buf            | GEN_VGA/INIT/R1                             | top_vga_rst_IBUF                            |                2 |              9 |
+|  GEN_VGA/VGA_DRIVER/clkout1_buf            | GEN_VGA/VGA_DRIVER/vsenable                 | top_vga_rst_IBUF                            |                4 |             10 |
+|  top_clk_IBUF_BUFG                         | GEN_TOP_CONV/BYTE_RX/r_Clk_Count[9]_i_2_n_1 | GEN_TOP_CONV/BYTE_RX/r_Clk_Count[9]_i_1_n_1 |                4 |             10 |
+|  GEN_VGA/VGA_DRIVER/clkout1_buf            |                                             | top_vga_rst_IBUF                            |                6 |             15 |
+|  top_clk_IBUF_BUFG                         |                                             |                                             |                8 |             18 |
+|  top_clk_IBUF_BUFG                         |                                             | top_SS_rst_IBUF                             |                5 |             19 |
+|  GEN_TEA/t4__0                             |                                             |                                             |                7 |             27 |
+|  GEN_DECIPHER/t11_reg[26]_i_2__0_n_1       |                                             |                                             |                9 |             27 |
+|  GEN_DECIPHER/t4_reg[26]_i_2__0_n_1        |                                             |                                             |                9 |             27 |
+|  GEN_TEA/t11__0                            |                                             |                                             |               10 |             27 |
+|  GEN_DECIPHER/t8_reg[31]_i_1__0_n_1        |                                             |                                             |                9 |             28 |
+|  GEN_TEA/t8__0                             |                                             |                                             |                9 |             28 |
+|  GEN_DECIPHER/t1_reg[31]_i_2__0_n_1        |                                             |                                             |                8 |             28 |
+|  GEN_TEA/t1__0                             |                                             |                                             |                8 |             28 |
+|  top_clk_IBUF_BUFG                         |                                             | top_vga_rst_IBUF                            |               11 |             31 |
+|  GEN_DECIPHER/next_v0_reg[31]_i_2_n_1      |                                             |                                             |               13 |             32 |
+|  GEN_DECIPHER/next_v1_reg[31]_i_2_n_1      |                                             |                                             |               12 |             32 |
+|  GEN_DECIPHER/sum_reg[31]_i_2__0_n_1       |                                             |                                             |               13 |             32 |
+|  GEN_DECIPHER/t10_reg[31]_i_2_n_1          |                                             |                                             |               10 |             32 |
+|  GEN_DECIPHER/t12_reg[31]_i_2__0_n_1       |                                             |                                             |               11 |             32 |
+|  GEN_DECIPHER/t14_reg[31]_i_2_n_1          |                                             |                                             |                9 |             32 |
+|  GEN_DECIPHER/t13_reg[31]_i_2_n_1          |                                             |                                             |                8 |             32 |
+|  GEN_DECIPHER/t7_reg[31]_i_2_n_1           |                                             |                                             |                9 |             32 |
+|  GEN_DECIPHER/t6_reg[31]_i_2__0_n_1        |                                             |                                             |               11 |             32 |
+|  GEN_TEA/t6__0                             |                                             |                                             |               10 |             32 |
+|  GEN_DECIPHER/v0_reg[31]_i_2_n_1           |                                             |                                             |               15 |             32 |
+|  GEN_DECIPHER/t9_reg[31]_i_2_n_1           |                                             |                                             |               10 |             32 |
+|  GEN_DECIPHER/v1_reg[31]_i_2_n_1           |                                             |                                             |               12 |             32 |
+|  t7__0                                     |                                             |                                             |                9 |             32 |
+|  next_v1__0                                |                                             |                                             |               10 |             32 |
+|  t13__0                                    |                                             |                                             |               14 |             32 |
+|  t14__0                                    |                                             |                                             |               11 |             32 |
+|  next_v0__0                                |                                             |                                             |               10 |             32 |
+|  t10__0                                    |                                             |                                             |               10 |             32 |
+|  GEN_TEA/t5__0                             |                                             |                                             |                9 |             32 |
+|  t9__0                                     |                                             |                                             |               13 |             32 |
+|  v0__0                                     |                                             |                                             |               12 |             32 |
+|  v1__0                                     |                                             |                                             |               11 |             32 |
+|  GEN_TEA/t3__0                             |                                             |                                             |                9 |             32 |
+|  GEN_TEA/t2__0                             |                                             |                                             |                9 |             32 |
+|  GEN_DECIPHER/t5_reg[31]_i_2__0_n_1        |                                             |                                             |               10 |             32 |
+|  GEN_TEA/t12__0                            |                                             |                                             |               10 |             32 |
+|  GEN_TEA/sum__0                            |                                             |                                             |               11 |             32 |
+|  GEN_TEA/next_sum__0                       |                                             |                                             |                9 |             32 |
+|  GEN_DECIPHER/next_sum_reg[31]_i_2__0_n_1  |                                             |                                             |               11 |             32 |
+|  GEN_DECIPHER/t3_reg[31]_i_2__0_n_1        |                                             |                                             |               10 |             32 |
+|  GEN_DECIPHER/t2_reg[31]_i_2__0_n_1        |                                             |                                             |                8 |             32 |
+|  n_0_1699_BUFG                             |                                             |                                             |               31 |             64 |
+|  output_data_reg[63]_i_1_n_1               |                                             |                                             |               23 |             64 |
+|  top_clk_IBUF_BUFG                         |                                             | top_rst_IBUF                                |               68 |            195 |
++--------------------------------------------+---------------------------------------------+---------------------------------------------+------------------+----------------+
 
 

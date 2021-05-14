@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Thu May 13 15:36:10 2021
+| Date         : Fri May 14 16:17:42 2021
 | Host         : LAPTOP-E46NNAVE running 64-bit major release  (build 9200)
 | Command      : report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
 | Design       : top
@@ -24,12 +24,16 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 1
-+----------+----------+-----------------------------------------------------+------------+
-| Rule     | Severity | Description                                         | Violations |
-+----------+----------+-----------------------------------------------------+------------+
-| CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
-+----------+----------+-----------------------------------------------------+------------+
+             Violations found: 42
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| CFGBVS-1    | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties         | 1          |
+| DPOP-1      | Warning  | PREG Output pipelining                                      | 2          |
+| DPOP-2      | Warning  | MREG Output pipelining                                      | 2          |
+| PDRC-153    | Warning  | Gated clock check                                           | 36         |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1          |
++-------------+----------+-------------------------------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
@@ -44,6 +48,212 @@ Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_des
  #where value2 is the voltage provided to configuration bank 0
 
 Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP GEN_DECIPHER/max_rounds output GEN_DECIPHER/max_rounds/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP GEN_DECIPHER/max_rounds__0 output GEN_DECIPHER/max_rounds__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP GEN_DECIPHER/max_rounds multiplier stage GEN_DECIPHER/max_rounds/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP GEN_DECIPHER/max_rounds__0 multiplier stage GEN_DECIPHER/max_rounds__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net GEN_DECIPHER/next_round_reg[7]_i_2__0_n_1 is a gated clock net sourced by a combinational pin GEN_DECIPHER/next_round_reg[7]_i_2__0/O, cell GEN_DECIPHER/next_round_reg[7]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net GEN_DECIPHER/next_sum_reg[31]_i_2__0_n_1 is a gated clock net sourced by a combinational pin GEN_DECIPHER/next_sum_reg[31]_i_2__0/O, cell GEN_DECIPHER/next_sum_reg[31]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net GEN_DECIPHER/next_v0_reg[31]_i_2_n_1 is a gated clock net sourced by a combinational pin GEN_DECIPHER/next_v0_reg[31]_i_2/O, cell GEN_DECIPHER/next_v0_reg[31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net GEN_DECIPHER/next_v1_reg[31]_i_2_n_1 is a gated clock net sourced by a combinational pin GEN_DECIPHER/next_v1_reg[31]_i_2/O, cell GEN_DECIPHER/next_v1_reg[31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net GEN_DECIPHER/round_reg[7]_i_2__0_n_1 is a gated clock net sourced by a combinational pin GEN_DECIPHER/round_reg[7]_i_2__0/O, cell GEN_DECIPHER/round_reg[7]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net GEN_DECIPHER/sum_reg[31]_i_2__0_n_1 is a gated clock net sourced by a combinational pin GEN_DECIPHER/sum_reg[31]_i_2__0/O, cell GEN_DECIPHER/sum_reg[31]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net GEN_DECIPHER/t10_reg[31]_i_2_n_1 is a gated clock net sourced by a combinational pin GEN_DECIPHER/t10_reg[31]_i_2/O, cell GEN_DECIPHER/t10_reg[31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net GEN_DECIPHER/t11_reg[26]_i_2__0_n_1 is a gated clock net sourced by a combinational pin GEN_DECIPHER/t11_reg[26]_i_2__0/O, cell GEN_DECIPHER/t11_reg[26]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net GEN_DECIPHER/t12_reg[31]_i_2__0_n_1 is a gated clock net sourced by a combinational pin GEN_DECIPHER/t12_reg[31]_i_2__0/O, cell GEN_DECIPHER/t12_reg[31]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#10 Warning
+Gated clock check  
+Net GEN_DECIPHER/t13_reg[31]_i_2_n_1 is a gated clock net sourced by a combinational pin GEN_DECIPHER/t13_reg[31]_i_2/O, cell GEN_DECIPHER/t13_reg[31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#11 Warning
+Gated clock check  
+Net GEN_DECIPHER/t14_reg[31]_i_2_n_1 is a gated clock net sourced by a combinational pin GEN_DECIPHER/t14_reg[31]_i_2/O, cell GEN_DECIPHER/t14_reg[31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#12 Warning
+Gated clock check  
+Net GEN_DECIPHER/t1_reg[31]_i_2__0_n_1 is a gated clock net sourced by a combinational pin GEN_DECIPHER/t1_reg[31]_i_2__0/O, cell GEN_DECIPHER/t1_reg[31]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#13 Warning
+Gated clock check  
+Net GEN_DECIPHER/t2_reg[31]_i_2__0_n_1 is a gated clock net sourced by a combinational pin GEN_DECIPHER/t2_reg[31]_i_2__0/O, cell GEN_DECIPHER/t2_reg[31]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#14 Warning
+Gated clock check  
+Net GEN_DECIPHER/t3_reg[31]_i_2__0_n_1 is a gated clock net sourced by a combinational pin GEN_DECIPHER/t3_reg[31]_i_2__0/O, cell GEN_DECIPHER/t3_reg[31]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#15 Warning
+Gated clock check  
+Net GEN_DECIPHER/t4_reg[26]_i_2__0_n_1 is a gated clock net sourced by a combinational pin GEN_DECIPHER/t4_reg[26]_i_2__0/O, cell GEN_DECIPHER/t4_reg[26]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#16 Warning
+Gated clock check  
+Net GEN_DECIPHER/t5_reg[31]_i_2__0_n_1 is a gated clock net sourced by a combinational pin GEN_DECIPHER/t5_reg[31]_i_2__0/O, cell GEN_DECIPHER/t5_reg[31]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#17 Warning
+Gated clock check  
+Net GEN_DECIPHER/t6_reg[31]_i_2__0_n_1 is a gated clock net sourced by a combinational pin GEN_DECIPHER/t6_reg[31]_i_2__0/O, cell GEN_DECIPHER/t6_reg[31]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#18 Warning
+Gated clock check  
+Net GEN_DECIPHER/t7_reg[31]_i_2_n_1 is a gated clock net sourced by a combinational pin GEN_DECIPHER/t7_reg[31]_i_2/O, cell GEN_DECIPHER/t7_reg[31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#19 Warning
+Gated clock check  
+Net GEN_DECIPHER/t8_reg[31]_i_1__0_n_1 is a gated clock net sourced by a combinational pin GEN_DECIPHER/t8_reg[31]_i_1__0/O, cell GEN_DECIPHER/t8_reg[31]_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#20 Warning
+Gated clock check  
+Net GEN_DECIPHER/t9_reg[31]_i_2_n_1 is a gated clock net sourced by a combinational pin GEN_DECIPHER/t9_reg[31]_i_2/O, cell GEN_DECIPHER/t9_reg[31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#21 Warning
+Gated clock check  
+Net GEN_DECIPHER/v0_reg[31]_i_2_n_1 is a gated clock net sourced by a combinational pin GEN_DECIPHER/v0_reg[31]_i_2/O, cell GEN_DECIPHER/v0_reg[31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#22 Warning
+Gated clock check  
+Net GEN_DECIPHER/v1_reg[31]_i_2_n_1 is a gated clock net sourced by a combinational pin GEN_DECIPHER/v1_reg[31]_i_2/O, cell GEN_DECIPHER/v1_reg[31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#23 Warning
+Gated clock check  
+Net GEN_TEA/next_round__0 is a gated clock net sourced by a combinational pin GEN_TEA/next_round_reg[7]_i_2/O, cell GEN_TEA/next_round_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#24 Warning
+Gated clock check  
+Net GEN_TEA/next_sum__0 is a gated clock net sourced by a combinational pin GEN_TEA/next_sum_reg[31]_i_2/O, cell GEN_TEA/next_sum_reg[31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#25 Warning
+Gated clock check  
+Net GEN_TEA/round is a gated clock net sourced by a combinational pin GEN_TEA/round_reg[7]_i_2/O, cell GEN_TEA/round_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#26 Warning
+Gated clock check  
+Net GEN_TEA/sum__0 is a gated clock net sourced by a combinational pin GEN_TEA/sum_reg[31]_i_2/O, cell GEN_TEA/sum_reg[31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#27 Warning
+Gated clock check  
+Net GEN_TEA/t11__0 is a gated clock net sourced by a combinational pin GEN_TEA/t11_reg[26]_i_2/O, cell GEN_TEA/t11_reg[26]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#28 Warning
+Gated clock check  
+Net GEN_TEA/t12__0 is a gated clock net sourced by a combinational pin GEN_TEA/t12_reg[31]_i_2/O, cell GEN_TEA/t12_reg[31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#29 Warning
+Gated clock check  
+Net GEN_TEA/t1__0 is a gated clock net sourced by a combinational pin GEN_TEA/t1_reg[31]_i_2/O, cell GEN_TEA/t1_reg[31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#30 Warning
+Gated clock check  
+Net GEN_TEA/t2__0 is a gated clock net sourced by a combinational pin GEN_TEA/t2_reg[31]_i_2/O, cell GEN_TEA/t2_reg[31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#31 Warning
+Gated clock check  
+Net GEN_TEA/t3__0 is a gated clock net sourced by a combinational pin GEN_TEA/t3_reg[31]_i_2/O, cell GEN_TEA/t3_reg[31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#32 Warning
+Gated clock check  
+Net GEN_TEA/t4__0 is a gated clock net sourced by a combinational pin GEN_TEA/t4_reg[26]_i_2/O, cell GEN_TEA/t4_reg[26]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#33 Warning
+Gated clock check  
+Net GEN_TEA/t5__0 is a gated clock net sourced by a combinational pin GEN_TEA/t5_reg[31]_i_2/O, cell GEN_TEA/t5_reg[31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#34 Warning
+Gated clock check  
+Net GEN_TEA/t6__0 is a gated clock net sourced by a combinational pin GEN_TEA/t6_reg[31]_i_2/O, cell GEN_TEA/t6_reg[31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#35 Warning
+Gated clock check  
+Net GEN_TEA/t8__0 is a gated clock net sourced by a combinational pin GEN_TEA/t8_reg[31]_i_2/O, cell GEN_TEA/t8_reg[31]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#36 Warning
+Gated clock check  
+Net GEN_VGA/VGA_DRIVER/clkout1_buf is a gated clock net sourced by a combinational pin GEN_VGA/VGA_DRIVER/hsync_i_2/O, cell GEN_VGA/VGA_DRIVER/hsync_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT GEN_VGA/VGA_DRIVER/hsync_i_2 is driving clock pin of 35 cells. This could lead to large hold time violations. Involved cells are:
+GEN_VGA/INIT/R_reg, GEN_VGA/INIT/red_reg[2], GEN_VGA/INIT/red_reg[2]_lopt_replica, GEN_VGA/INIT/red_reg[2]_lopt_replica_2, GEN_VGA/INIT/red_reg[2]_lopt_replica_3, GEN_VGA/INIT/red_reg[2]_lopt_replica_4, GEN_VGA/INIT/red_reg[2]_lopt_replica_5, GEN_VGA/INIT/red_reg[2]_lopt_replica_6, GEN_VGA/INIT/red_reg[2]_lopt_replica_7, GEN_VGA/INIT/red_reg[2]_lopt_replica_8, GEN_VGA/INIT/spriteon_reg, GEN_VGA/VGA_DRIVER/hc_reg_reg[0], GEN_VGA/VGA_DRIVER/hc_reg_reg[1], GEN_VGA/VGA_DRIVER/hc_reg_reg[2], GEN_VGA/VGA_DRIVER/hc_reg_reg[3] (the first 15 of 35 listed)
 Related violations: <none>
 
 
