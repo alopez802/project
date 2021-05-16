@@ -57,7 +57,6 @@ Port (
         top_serial_rx   : in std_logic; -- top uart input
         top_vga_sw      : in std_logic_vector(7 downto 0); -- switches used to change color of text
         top_deci_enc_SS      : in std_logic; -- will show decrypt on SS if high
-        top_deci_enc    : in std_logic; -- will display the encrypted or decrypted text on vga monitor
         top_hsync       : out std_logic; -- top output hsync for vga
         top_vsync       : out std_logic; -- top output vsync for vga
         top_red         : out std_logic_VECTOR(2 downto 0); -- top output red for text
@@ -121,28 +120,18 @@ component TeaEncipher is
 end component;
 
 
-component vga_initials_top is
- generic (strip_hpixels :positive:= 800;   -- Value of pixels in a horizontal line = 800
-          strip_vlines  :positive:= 512;   -- Number of horizontal lines in the display = 521
-          strip_hbp     :positive:= 144;   -- Horizontal back porch = 144 (128 + 16)
-          strip_hfp     :positive:= 784;   -- Horizontal front porch = 784 (128+16 + 640)
-          strip_vbp     :positive:= 31;    -- Vertical back porch = 31 (2 + 29)
-          strip_vfp     :positive:= 511;    -- Vertical front porch = 511 (2+29+ 480)
-          clk_bits      :integer := 869;
-          depth_prom    :integer := 5;
-          data_size_prom:integer := 7;
-          hex_size_prom :integer := 114
-         );
-    Port ( clk  : in STD_LOGIC;
-           rst  : in STD_LOGIC;
-           enciphered_data: in unsigned(63 downto 0);
-           vga_sw : STD_LOGIC_VECTOR (7  downto 0);
-           hsync: out STD_LOGIC;
-           vsync: out STD_LOGIC; 
-           red  : out STD_LOGIC_VECTOR (2 downto 0); 
-           green: out STD_LOGIC_VECTOR (2 downto 0);
-           blue : out STD_LOGIC_VECTOR (2 downto 0)
-         );
+component Temp_VGATOP
+    Port (
+        clk : in STD_LOGIC;
+        rst : in STD_LOGIC;
+        enciphered_data : in UNSIGNED(63 downto 0);
+        vga_sw: in std_logic_vector(7 downto 0);
+        hsync : out STD_LOGIC;
+        vsync : out STD_LOGIC;
+        red   : out STD_LOGIC_VECTOR (2 downto 0);
+        green : out STD_LOGIC_VECTOR (2 downto 0);
+        blue  : out STD_LOGIC_VECTOR (2 downto 0)
+    );
 end component;
 
 signal top_output_data : unsigned(63 downto 0);
@@ -180,9 +169,9 @@ GEN_TEA: TeaEncipher
         
     );
 
-GEN_DECI_ENC: process(top_deci_enc)
+GEN_DECI_ENC: process(top_deci_enc_SS)
               begin
-              if(top_deci_enc = '0') then
+              if(top_deci_enc_SS = '0') then
                 temp_deci_enc <= top_output_data;
               else
                 temp_deci_enc <= top_output_decipher;
@@ -190,23 +179,11 @@ GEN_DECI_ENC: process(top_deci_enc)
               end if;
               end process;
 
-GEN_VGA: vga_initials_top
-          generic map (
-          strip_hpixels => top_strip_hpixels,
-          strip_vlines  => top_strip_vlines,
-          strip_hbp     => top_strip_hbp,
-          strip_hfp     => top_strip_hfp,
-          strip_vbp     => top_strip_vbp,
-          strip_vfp     => top_strip_vfp,
-          clk_bits      => top_clk_bits,
-          depth_prom    => top_depth_prom,
-          data_size_prom=> top_data_size,
-          hex_size_prom => top_hex_size 
-         )
+GEN_VGA: Temp_VGATOP
     Port map( 
            clk   => top_clk, -- top clk for vga
            rst   => top_vga_rst, -- top vga reset
-           enciphered_data  => unsigned(temp_deci_enc),
+           enciphered_data  => unsigned(top_output_data),
            vga_sw           => top_vga_sw,
            hsync => top_hsync, -- top output for hsync
            vsync => top_vsync, -- top output for vsync

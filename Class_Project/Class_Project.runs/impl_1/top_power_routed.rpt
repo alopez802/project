@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Fri May 14 16:17:46 2021
+| Date             : Fri May 14 22:23:40 2021
 | Host             : LAPTOP-E46NNAVE running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.216        |
+| Total On-Chip Power (W)  | 0.209        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.119        |
+| Dynamic (W)              | 0.112        |
 | Device Static (W)        | 0.097        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 84.0         |
@@ -52,20 +52,19 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.004 |        5 |       --- |             --- |
-| Slice Logic    |     0.004 |     4457 |       --- |             --- |
-|   LUT as Logic |     0.004 |     1804 |     63400 |            2.85 |
-|   CARRY4       |    <0.001 |      159 |     15850 |            1.00 |
+| Clocks         |     0.005 |        5 |       --- |             --- |
+| Slice Logic    |     0.001 |     2710 |       --- |             --- |
+|   LUT as Logic |     0.001 |     1188 |     63400 |            1.87 |
 |   BUFG         |    <0.001 |       11 |        32 |           34.38 |
-|   Register     |    <0.001 |     1726 |    126800 |            1.36 |
-|   F7/F8 Muxes  |    <0.001 |       27 |     63400 |            0.04 |
-|   Others       |     0.000 |       21 |       --- |             --- |
-| Signals        |     0.006 |     4097 |       --- |             --- |
+|   CARRY4       |    <0.001 |       89 |     15850 |            0.56 |
+|   Register     |    <0.001 |     1018 |    126800 |            0.80 |
+|   F7/F8 Muxes  |    <0.001 |       23 |     63400 |            0.04 |
+|   Others       |     0.000 |       17 |       --- |             --- |
+| Signals        |     0.001 |     2312 |       --- |             --- |
 | PLL            |     0.095 |        1 |         6 |           16.67 |
-| DSPs           |     0.001 |        2 |       240 |            0.83 |
-| I/O            |     0.009 |       42 |       210 |           20.00 |
+| I/O            |     0.009 |       41 |       210 |           19.52 |
 | Static Power   |     0.097 |          |           |                 |
-| Total          |     0.216 |          |           |                 |
+| Total          |     0.209 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.038 |       0.023 |      0.015 |
+| Vccint    |       1.000 |     0.030 |       0.015 |      0.015 |
 | Vccaux    |       1.800 |     0.067 |       0.049 |      0.018 |
 | Vcco33    |       3.300 |     0.007 |       0.003 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -128,13 +127,13 @@ Table of Contents
 2.2 Clock Constraints
 ---------------------
 
-+--------------------+---------------------------------------------+-----------------+
-| Clock              | Domain                                      | Constraint (ns) |
-+--------------------+---------------------------------------------+-----------------+
-| clk25_clk_wiz_0    | GEN_VGA/CLK_GEN_PLL/inst/clk25_clk_wiz_0    |            40.0 |
-| clkfbout_clk_wiz_0 | GEN_VGA/CLK_GEN_PLL/inst/clkfbout_clk_wiz_0 |            10.0 |
-| sys_clk_pin        | top_clk                                     |            10.0 |
-+--------------------+---------------------------------------------+-----------------+
++--------------------+----------------------------------------------------------+-----------------+
+| Clock              | Domain                                                   | Constraint (ns) |
++--------------------+----------------------------------------------------------+-----------------+
+| clk25_clk_wiz_0    | GEN_VGA/VGA_INITIALS/CLK_GEN_PLL/inst/clk25_clk_wiz_0    |            40.0 |
+| clkfbout_clk_wiz_0 | GEN_VGA/VGA_INITIALS/CLK_GEN_PLL/inst/clkfbout_clk_wiz_0 |            10.0 |
+| sys_clk_pin        | top_clk                                                  |            10.0 |
++--------------------+----------------------------------------------------------+-----------------+
 
 
 3. Detailed Reports
@@ -143,16 +142,15 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+-----------------+-----------+
-| Name            | Power (W) |
-+-----------------+-----------+
-| top             |     0.119 |
-|   GEN_DECIPHER  |     0.009 |
-|   GEN_TEA       |     0.002 |
-|   GEN_TOP_CONV  |     0.003 |
-|   GEN_VGA       |     0.096 |
-|     CLK_GEN_PLL |     0.095 |
-|       inst      |     0.095 |
-+-----------------+-----------+
++-------------------+-----------+
+| Name              | Power (W) |
++-------------------+-----------+
+| top               |     0.112 |
+|   GEN_TEA         |     0.002 |
+|   GEN_TOP_CONV    |     0.004 |
+|   GEN_VGA         |     0.096 |
+|     VGA_INITIALS  |     0.096 |
+|       CLK_GEN_PLL |     0.095 |
++-------------------+-----------+
 
 
