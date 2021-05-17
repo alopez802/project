@@ -1,7 +1,7 @@
 # compile vhdl design source files
 vhdl xil_defaultlib  \
 "../../../../Class_Project.srcs/sources_1/new/tea_decipher.vhd" \
-"../../../../Class_Project.srcs/sources_1/new/tea_decipher_tb.vhd" \
+"../../../../Class_Project.srcs/sources_1/new/decipher_tb.vhd" \
 
 # Do not sort compile order
 nosort
